@@ -59,7 +59,7 @@ The input of the model is the acceleration. This is integrated first to the spee
 	When the negative velocity is higher then $20^m/_s$ the parachute opens and the velosity stays constant by $-20^m/_s$. That means the acceleration is zero. This is solved in the model as follows. When the velocity is smaller then vChute the output from the comperator is one. This is gained with g and and subtracted from the general acceleration.
 	
 
-
+\newpage
 \section{Simulation}
 The process described in Section \ref{sec:model} can be shown in Figure \ref{fig:scope1}. 
 The graph on the top is the hight in meter and the parable flight is good visible in contrast to the changes. 
@@ -137,14 +137,7 @@ On Figure \ref{fig:plot1} is the visualisation of velocity and position. the red
 	plot(t,v,t2,v2, 'ro', t1, v1, 'r+')
 	xlabel('Time [s]');
 	ylabel('Velocity [m]');
-	
-	
-	%%
-	% Analysis of the loged datas. 
-	a = logsout{1}.Values.Data;
-	v = logsout{2}.Values.Data;
-	x = logsout{3}.Values.Data;
-	t_log = logsout{2}.Values.Time;
+
 \end{lstlisting}
 	
 	

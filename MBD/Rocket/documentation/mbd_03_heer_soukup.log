@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  31 OCT 2018 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  31 OCT 2018 21:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**report_online.tex
-(./report_online.tex
+**mbd_03_heer_soukup.tex
+(./mbd_03_heer_soukup.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -2266,8 +2266,8 @@ ikz package.
 LaTeX Warning: Unused global option(s):
     [a4,paper].
 
-(./report_online.aux)
-\openout1 = `report_online.aux'.
+(./mbd_03_heer_soukup.aux)
+\openout1 = `mbd_03_heer_soukup.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
@@ -2283,7 +2283,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 31.
@@ -2469,9 +2470,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 53.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./report_online.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./mbd_03_heer_soukup.toc
+)
 \tf@toc=\write7
-\openout7 = `report_online.toc'.
+\openout7 = `mbd_03_heer_soukup.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -2479,11 +2481,14 @@ been already used, duplicate ignored
                    \relax 
 l.39 	\clearpage
                  [1] (./introduction/introduction.tex
-<figures/overview.png, id=31, 834.11626pt x 346.896pt>
+<figures/overview.png, id=43, 834.11626pt x 346.896pt>
 File: figures/overview.png Graphic file (type png)
 <use figures/overview.png>
-Package pdftex.def Info: figures/overview.png  used on input line 30.
+Package pdftex.def Info: figures/overview.png  used on input line 37.
 (pdftex.def)             Requested size: 352.66617pt x 146.66927pt.
+ [2
+
+ <./figures/overview.png>] [3]
 Package epstopdf Info: Source file: <figures/scope.eps>
 (epstopdf)                    date: 2018-10-31 11:02:08
 (epstopdf)                    size: 50642 bytes
@@ -2492,76 +2497,93 @@ Package epstopdf Info: Source file: <figures/scope.eps>
 (epstopdf)                    size: 42791 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/scope-eps-converte
 d-to.pdf figures/scope.eps>
-(epstopdf)             \includegraphics on input line 40.
+(epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/scope-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/scope-eps-converted-to.pdf, id=32, 421.575pt x 298.11375pt>
+<figures/scope-eps-converted-to.pdf, id=72, 421.575pt x 298.11375pt>
 File: figures/scope-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/scope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/scope-eps-converted-to.pdf  used on input line
- 40.
+ 72.
 (pdftex.def)             Requested size: 352.66617pt x 249.39035pt.
-[2
+[4 <./figures/scope-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/plot1.eps>
+(epstopdf)                    date: 2018-10-31 21:14:20
+(epstopdf)                    size: 60562 bytes
+(epstopdf)             Output file: <figures/plot1-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-31 21:15:27
+(epstopdf)                    size: 22199 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/plot1-eps-converte
+d-to.pdf figures/plot1.eps>
+(epstopdf)             \includegraphics on input line 88.
+Package epstopdf Info: Output file is already uptodate.
 
- <./figures/overview.png>]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 49.
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/plot1-eps-converted-to.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/plot1-eps-converted-to.pdf, id=93, 421.575pt x 316.18124pt>
+File: figures/plot1-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/plot1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/plot1-eps-converted-to.pdf  used on input line
+ 88.
+(pdftex.def)             Requested size: 352.66617pt x 264.50491pt.
+[5 <./figures/plot1-eps-converted-to.pdf>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 94.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [3 <./figures/scope-eps-converted-to.pdf>]) (./biblio/bib.tex (./report_onlin
-e.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)) [4] (./report_online.lof)
+)) [6] [7]
+(./mbd_03_heer_soukup.lof)
 \tf@lof=\write8
-\openout8 = `report_online.lof'.
+\openout8 = `mbd_03_heer_soukup.lof'.
 
- [5
-
-] (./report_online.lot)
+ (./mbd_03_heer_soukup.lot)
 \tf@lot=\write9
-\openout9 = `report_online.lot'.
+\openout9 = `mbd_03_heer_soukup.lot'.
 
- [6
+ [8
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
- (./report_online.aux)
+
+(./mbd_03_heer_soukup.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 62544 strings out of 492982
- 1409807 string characters out of 6134895
- 1920626 words of memory out of 5000000
- 65020 multiletter control sequences out of 15000+600000
+ 62570 strings out of 492982
+ 1410245 string characters out of 6134895
+ 1969843 words of memory out of 5000000
+ 65044 multiletter control sequences out of 15000+600000
  630618 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,98p,10386b,3231s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,98p,10391b,2074s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/u
-sr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/
-ucrr8a.pfb>
-Output written on report_online.pdf (7 pages, 267262 bytes).
+sr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/sh
+are/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/courier/ucrr8a.pfb>
+Output written on mbd_03_heer_soukup.pdf (9 pages, 303206 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 65 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
