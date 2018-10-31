@@ -1,0 +1,4 @@
+\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}
+\contentsline {part}{I\hspace {1em}Einleitung}{2}{part.1}
+\contentsline {section}{\numberline {1}Muster}{2}{section.1}
