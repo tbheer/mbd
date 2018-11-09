@@ -4,3 +4,8 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Overview of the simulink model.\relax }}{2}{figure.caption.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Scope from the Simulation.\relax }}{4}{figure.caption.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Plot from running code in Listing \ref {lst:code1}.\relax }}{5}{figure.caption.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Schematic of the electrical system\relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Implementation of equation \ref {eq:a}\relax }}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Implementation of equation \ref {eq:b}\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Test setup of the model\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Results of the simulation\relax }}{10}{figure.caption.8}
