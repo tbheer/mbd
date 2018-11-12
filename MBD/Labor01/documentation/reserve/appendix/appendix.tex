@@ -1,0 +1,20 @@
+\begin{appendices}
+%\pagenumbering{roman}
+
+%\section{Aufgabenstellung}
+%\includepdf[
+%	pages=1-2,
+%	offset=0 -2.2cm,
+%	%frame,
+%	width=0.8\textwidth,
+%	picturecommand={\centering},
+%	pagecommand={\thispagestyle{fancy}}
+%	]{../../adm/aufgabenstellung/mission.pdf}
+
+\iftoggle{printversion}{ % content for print version --------------------------
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+}{ % content for online version
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}	
+}
+
+\end{appendices}

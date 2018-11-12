@@ -1,0 +1,26 @@
+\section{Optimierungen}
+Die vorliegende Arbeit zeigt auf, welche Faktoren den 2-Puls Lasttest
+beeinflussen und  welche Performance mit dem realisierten \gls{bms}
+erreicht werden kann. Die dabei festgestellten Verbesserungsmöglichkeiten
+sollen im Folgenden zusammengefasst werden.
+
+\subsection{Entladeregler}
+Die Validierung des 2-Puls Lasttest zeigt, dass die Genauigkeit der
+Schätzungen mit höheren Lastpulsen besser wird. Hierbei wird ein
+Lastpuls von \SI{>2.4}{\ampere} empfohlen. Da mit der gegebenen
+Hardware ausschliesslich Laspulse von $\leq \SI{1}{\ampere}$ realisiert
+werden können, ist eine Modifikation für höhere Lastpulse in Betracht
+zu ziehen.
+
+\subsection{Temperaturmessung}
+Die Untersuchung des bestehenden \gls{bms} zeigte, dass die
+Temperaturmessung weder die Umgebungstemperatur noch die Temperatur
+der Batterie misst. Diese misst die Temperatur der Leiterplatte,
+auf welchem das \gls{bms} realisiert ist. Für den realisierten
+Prototyp wurde deshalb auf eine Temperaturkompensation der
+Modellparameter verzichtet. Um eine Temperaturkompensation
+anzuwenden, bedarf es einer zuverlässigen Temperaturmessung.
+Daher wird der Einsatz eines abgesetzten Temperatursensors
+vorgeschlagen, welcher an der Batterie befestigt wird. Alternativ
+ist auch der Einsatz einer Batterie mit integriertem
+Temperatursensor denkbar.

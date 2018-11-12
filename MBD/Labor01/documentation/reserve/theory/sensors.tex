@@ -1,0 +1,69 @@
+\section{Sensorik}
+%Auflösegenauigkeit
+Um so genauer das Trinkglas detektiert werden kann, desto genauer kann die Düse schliesslich ausgerichtet werden. Daher ist eine präzise Lokalisierung des Trinkglases sehr wichtig. In einer ersten Abschätzung wird davon ausgegangen, dass eine Lokalisierung auf etwa $\pm$2cm genau ausreichend ist.\\
+\todo{Abtastrate}
+\todo{erkennen von Trinkglas? Nicht notwendig da Ventil manuell geöffnet wird?}
+
+	\subsection{Bewertungskriterien}
+		\begin{description}
+			\item Abtastrate
+			\item Kosten
+			\item Aufwand
+			\item Genauigkeit
+			\item Platzbedarf
+			\item Coolness
+			\item Spezielles
+			\item Lieferfristen
+			
+		\end{description}
+	
+	
+	%\subsection{LIDAR}
+	\subsection{Ultraschallsensor}
+	%Ein Sensor oder mehrere
+	Es wird ein Ultraschallsignal ausgesandt, dann wird die Zeit getoppt bis ein Echo wieder zurück beim Ausgangspunkt ist. Anhand dieser Zeit und der Schallgeschwindigkeit in der Luft wird die Distanz zwischen Sensor und dem Gegenstand berechnet.  \\
+	Ultraschallsensoren haben meist eine grosse Detektionszone. Je nach Sensor und Distanz zum Teil bis zu 180°. Dies kann ein Vor- aber auch ein Nachteil sein. \todo{Vor und nachteile genauer ausformulieren}\\
+	Mit drei Sensoren könnte man eine Position im Raum bestimmen. Da das Glas nicht genau definiert ist und so auch nicht der reflektierende Punkt verliert diese Methode stark an Genauigkeit. Es ist auch schwierig die Öffnung oben zu lokalisieren.
+	
+	\subsection{ToF - Time of Flight }% LiDAR}
+	ToF ist die Abkürzung für Time of Flight und funktioniert ähnlich wie der Ultraschallsensor. Anstelle von Schallwellen wird Licht verwendet. Licht hat zwei markante Vorteil im Vergleich zum Schall. Einerseits ist es schneller, daher kann die Abtastrate erhöht werden. Andererseits, was wichtiger ist, kann Licht fokussiert werden. So kann nicht nur die Distanz sondern auch die Richtung und daraus die Position bestimmt werden.\\
+	Da Glas lichtdurchlässig ist könnte es ein Problem sein, dass zu wenig Licht reflektiert wird und das Trinkglas so nicht detektiert wird. 
+	
+		\subsubsection{ToF-Kamera}
+		Eine ToF-Kamera wäre wohl die einfachste Lösung. Sie liefert ein zweidimensionales Array mit Abstandswerten. Aufgrund der Daten könnte man mit herkömmlichen Bildverarbeitungsalgorithmen das Trinkglas vom Rest des Bildes extrahieren und so den Mittelpunkt der oberen Öffnung orten.\\		
+		Die Frage welche sich hier stellt ist diejenige des Preises. 
+		
+		\subsubsection{Bewegbare Sensoren}
+		Würde man einen oder mehrere Sensoren beweglich montieren könnte man das Areal abtasten und das Glas so detektieren.
+		Diese Variante hat jedoch einige Nachteile. Es wird viel Zeit benötigt um das gesamte Areal abzutasten, es wird sehr schwierig den Bewegungen des Glases zu folgen und es ist kompliziert ein Trinkglas von einem anderen Gegenstand zu unterscheiden.
+	
+		\subsubsection{2D-Array aus Sensoren}
+		Man könnte auch ein 2D-Array aus ToF-Sensoren machen und so das komplette Areal im Überblick halten. Wenn man für 40cm Breite alle 2cm einen Sensor nimmt, werden dafür schon 20 Sensoren gebraucht. Dies müsste man wohl noch mit Anzahl Sensoren in der Z-Achse multiplizieren.% und in der Höhe 
+		
+	
+	\subsection{Lichtschranken}
+	
+	
+	
+	\subsection{Kamera}
+	Wie das menschliche Gehirn die Bilder des Auges verarbeitet kann man Bilder von Digitalkameras verarbeiten. Dafür gibt es unterschiedliche Ansätze, aber im Prinzip würde man Farben und Formen erkennen um so das Trinkglas aus dem Hintergrund zu extrahieren.
+	
+		
+		\subsection{2D-Kamera}
+		\label{sec:2d}
+		Eine einzelne Kamera füllt ein zweidimensionales Array mit Helligkeitswerten. 
+		Daraus könnte man zum Beispiel den Boden oder die Öffnung extrahieren. Da ihre Durchmesser nicht exakt bekannt sind, ist es auch schwierig die genaue X- und Y-Position herauszulesen ausser das Glas ist Senkrecht über der Linse. \todo{Skizze}
+		%Falls das Bild farbig ist enthält ein Punkt drei Farbwerte (je nach Farbsystem YCbCr, RGB, etc.)
+		%So könnte man zum Beispiel den Kreisrunden Glasboden detektieren
+
+		
+		\subsection{3D-Kamera}
+		Mit zwei etwas auseinander liegenden Kameras kann man ein Objekt dreidimensional erkennen. So kann auch der Mensch dank zwei Augen dreidimensional sehen. Man schaut wie weit der selbe Punkt auf den beiden Bildern auseinander liegt. Je weiter dieser auseinander liegt desto näher ist er. Sind die beiden Punkte am selben Ort so ist er in weiter Ferne. Dieses Verfahren heisst Stereovision.\\
+		Es gäbe auch die Möglichkeit mit zwei Kameras aus verschiedenen Blickwinkeln das Areal zu beobachten.
+		\todo{Skizze. Wird dieses Verfahren bereits irgendwo angewandt?}
+		
+
+		
+		\subsection{Kamera und Distanzsensor}
+		Würde man wie im Kapitel \ref{sec:2d} eine Kamera nehmen und zusätzlich noch einen Distanzsensor mit grossem Winkel, könnte man das Trinkglas im Raum genauer orten. Nur die Position der Öffnung lässt sich so nicht genau orten.
+		

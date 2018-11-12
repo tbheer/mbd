@@ -1,0 +1,250 @@
+\begin{appendices}
+	
+	\section{Matlab Code}
+	
+\begin{lstlisting}[caption={Matlabcode},label=code]
+	% Variables for MBD Unit2
+	%1.1
+	clear all;
+	
+	J_sc = 343;     %A/m2
+	G = 1000;       %W/m2
+	G_n = 1000;     %W/m2
+	A = 0.01266;    %m2
+	R_s = 1e-6;     %Ohm
+	R_sh = 1000;    %Ohm
+	I_0 = 2.8e-9;   %A
+	Vt = 25.85e-3;  %V
+	m = 1;          % 1= ideal diode
+	V = 0.5;          %V
+	k= 1.38064852*10^-23;
+	T = 26.85 +273.15;
+	q=1.602176565*10^-19;
+	
+	save var.mat;
+	
+	%%
+	% Logdaten auslesen
+	% logsout{2}.Values.Data
+	% 2.4
+	figure(99)
+	subplot(2,2,1);
+	plot(logsout{2}.Values.Time, logsout{2}.Values.Data)
+	xlabel('Time [sec]')
+	ylabel('Current [A]')
+	
+	subplot(2,2,2);
+	plot(logsout{2}.Values.Time, logsout{4}.Values.Data ./logsout{2}.Values.Data)
+	xlabel('Time [sec]')
+	ylabel('Resistance [Ohm]')
+	
+	subplot(2,2,3);
+	plot(logsout{2}.Values.Time, logsout{4}.Values.Data)
+	xlabel('Time [sec]')
+	ylabel('Voltage [V]')
+	
+	subplot(2,2,4);
+	plot(logsout{2}.Values.Time, logsout{3}.Values.Data)
+	xlabel('Time [sec]')
+	ylabel('Power [W]')
+	
+	%saveas(gcf, '../../documentation/figures/subplots.eps', 'eps')
+	
+	%%
+	% XY Plot with u & i
+	% 2.4
+	sim('unit2');
+	x=u.get('Data');
+	y=i.get('Data');
+	plot(x,y);
+	xlabel('Voltage [V]')
+	ylabel('Amps [A]')
+	
+	
+	%%
+	%sim('unit2', 'G', [400, 600,800,1000,1200])
+	% Simuliere mit verschiedenen G-Werten und speichere die Werte
+	% Sim Zeit nehmen mit tic - toc
+	% 3.1 & 4
+	tic
+	
+	G = 400;
+	sim('unit2');
+	u400=u.get('Data');
+	i400=i.get('Data');
+	
+	G = 600;
+	sim('unit2');
+	u600=u.get('Data');
+	i600=i.get('Data');
+	
+	G = 800;
+	sim('unit2');
+	u800=u.get('Data');
+	i800=i.get('Data');
+	
+	G = 1000;
+	sim('unit2');
+	u1000=u.get('Data');
+	i1000=i.get('Data');
+	
+	G = 1200;
+	sim('unit2');
+	u1200=u.get('Data');
+	i1200=i.get('Data');
+	
+	toc
+	
+	%%
+	% Zeit um Array zu lesen
+	tic
+	[P_max, max_ind] = max(u1200.*i1200)
+	toc
+	
+	%%
+	%XY Plot Leistung über Spannung
+	% 3.2
+	plot(u400, i400.*u400, 'r')
+	hold on
+	xlabel('Voltage [V]');
+	ylabel('Power [W]');
+	plot(u600, i600.*u600, 'g')
+	plot(u800, i800.*u800, 'b')
+	plot(u1000, i1000.*u1000, 'k')
+	plot(u1200, i1200.*u1200, 'c')
+	legend({'G = 400', 'G = 600', 'G = 800', 'G = 1000', 'G = 1200'},'Location','southwest')
+	hold off
+	%saveas(gcf, '../../documentation/figures/xy_vp.eps', 'eps')
+	
+	%%
+	%XY Plot Strom über Spannung
+	% 3.2
+	plot(u400, i400, 'r')
+	hold on
+	xlabel('Voltage [V]');
+	ylabel('Current [A]');
+	plot(u600, i600, 'g')
+	plot(u800, i800, 'b')
+	plot(u1000, i1000, 'k')
+	plot(u1200, i1200, 'c')
+	legend({'G = 400', 'G = 600', 'G = 800', 'G = 1000', 'G = 1200'},'Location', 'southwest')
+	hold off
+	%saveas(gcf, '../../documentation/figures/xy_vc.eps', 'eps')
+	
+	%%
+	% XY Plot mit den max values in der Legende
+	[P_value, index_peak] =  max(u1000.*i1000);
+	figure(3);
+	plot(u1200, i1200, 'r')
+	xlabel('Voltage [V]');
+	ylabel('Current [A]');
+	legend(strcat('G = 1000, V_{mpp} = ', num2str(u1000(index_peak))));	
+	
+	%%
+	% XY Plot mit den max values in der Legende
+	% 3.3
+	figure(2);
+	plot(u1200, u1000.*i1000);
+	xlabel('Voltage [V]');
+	ylabel('Power [W]');
+	legend(strcat('G = 1200, P_{mpp} = ', num2str(P_value)));
+	
+	%%
+	%%Erstelle die Arrays zur Visualisierung für die Lookuptables mit undersampling
+	% 4.0
+	% i1arr = i1.get('Data');
+	% u2arr = u1.get('Data');
+	% 
+	% c2 = 1;
+	% for c = 1:8    
+	%     p400(c) = u400(c2) * i400(c2);
+	%     p600(c) = u600(c2) * i600(c2);
+	%     p800(c) = u800(c2) * i800(c2);
+	%     p1000(c) = u1000(c2) * i1000(c2);
+	%     p1200(c) = u1200(c2) * i1200(c2);
+	%     c2 = c2 + 40;
+	% end
+	
+	% for c = 1:1000    
+	%     iv(c) = i1arr(c2);
+	%     uv(c) = u2arr(c2);
+	%     c2 = c2 + 1;
+	% end
+	% 
+	% %plt = [p400; p600; p800; p1000; p1200];
+	% plt2 = [iv; uv];
+	% toc
+	% figure(4);
+	% plot(uv, iv);
+	% xlabel('Voltage [V]');
+	% ylabel('Ampere [A]');
+	% legend();
+	% toc
+	%%Erstelle den Sourcecode der Arrays für LaTex
+	%latextable = latex(sym(vpa(round(plt2, 4))))
+	%latextable = latex(sym(vpa(round(plt, 4))))
+	
+	%%
+	% Simulation mit verschiedenen Temperaturen
+	% 5.2
+	
+	T = 15 + 273.15;
+	sim('unit2');
+	u15=u.get('Data');
+	i15=i.get('Data');
+	
+	T = 20 + 273.15;
+	sim('unit2');
+	u20=u.get('Data');
+	i20=i.get('Data');
+	
+	T = 30 + 273.15;
+	sim('unit2');
+	u30=u.get('Data');
+	i30=i.get('Data');
+	
+	T = 40 + 273.15;
+	sim('unit2');
+	u40=u.get('Data');
+	i40=i.get('Data');
+	
+	T = 50 + 273.15;
+	sim('unit2');
+	u50=u.get('Data');
+	i50=i.get('Data');
+	
+		
+	%%
+	%XY Plot Leistung über Voltage
+	% 5.3
+	plot(u15(1:end), i15(1:end).*u15(1:end), 'r')
+	hold on
+	xlabel('Voltage [V]');
+	ylabel('Power [W]');
+	plot(u20(1:end), i20(1:end).*u20(1:end), 'g')
+	plot(u30(1:end), i30(1:end).*u30(1:end), 'b')
+	plot(u40(1:end), i40(1:end).*u40(1:end), 'k')
+	plot(u50(1:end), i50(1:end).*u50(1:end), 'c')
+
+	legend({'T = 15C', 'T = 20C', 'T = 30C', 'T = 40C', 'T = 50C'},'Location','southwest')
+	hold off
+	%saveas(gcf, '../../documentation/figures/xy_vp_t.eps', 'eps')
+	
+	%%
+	%XY Plot Strom über Spannung
+	% 5.3
+	plot(u15(1:end), i15(1:end), 'r')
+	hold on
+	xlabel('Voltage [V]');
+	ylabel('Current [A]');
+	plot(u20(1:end), i20(1:end), 'g')
+	plot(u30(1:end), i30(1:end), 'b')
+	plot(u40(1:end), i40(1:end), 'k')
+	plot(u50(1:end), i50(1:end), 'c')
+	legend({'T = 15C', 'T = 20C', 'T = 30C', 'T = 40C', 'T = 50C'},'Location', 'southwest')
+	hold off
+	%saveas(gcf, '../../documentation/figures/xy_vc_t.eps', 'eps'	
+\end{lstlisting}
+	
+	
+\end{appendices}

@@ -1,0 +1,27 @@
+\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}
+\babel@toc {english}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces Scheme of solar cell}}{2}{figure.caption.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Mathematical overview scheme based on the Equations \ref {eq:1} - \ref {eq:4}\relax }}{3}{figure.caption.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces The total current of the irradiance without losses.}}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Loss current from the internal resistance.}}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Loss current of the diode.}}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces The scope arround the point of a short circuit with irradiance of $1000^W/_{m^2}$.}}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces The scpoe arraound the point of an open circuit with irradiance of $1000^W/_{m^2}$.\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces The scpoe arraound the point of an open circuit with irradiance of $1500^W/_{m^2}$.\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces The ploted graph is made with the loged datas.\relax }}{11}{figure.caption.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces The voltage defined as product of I and $R_{Load}$.}}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces The extended scope with $R_{Load}$.\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces XY-Plot with voltage and current. The product of current and voltage from each point on the line is the resulting power in watt.\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Fixed irradiance at 400 $^W/_{m^2}$ with a variable resistance as ramp from 0-1$\Omega $\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Fixed irradiance at 600 $^W/_{m^2}$ with a variable resistance as ramp from 0-1$\Omega $\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Fixed irradiance at 800 $^W/_{m^2}$ with a variable resistance as ramp from 0-1$\Omega $\relax }}{15}{figure.caption.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Fixed irradiance at 1000 $^W/_{m^2}$ with a variable resistance as ramp from 0-1$\Omega $\relax }}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Fixed irradiance at 1200 $^W/_{m^2}$ with a variable resistance as ramp from 0-1$\Omega $\relax }}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Current dipence on voltage.}}{17}{figure.caption.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Maximum Power Point, G = 400, 600, 800 1 of 2\relax }}{18}{figure.caption.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Maximum Power Point, G = 1000, 1200 2 of 2\relax }}{19}{figure.caption.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Power depence on voltage. The different lines symbolizes different irradiances G.\relax }}{20}{figure.caption.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Update of the Figure \ref {fig:i_d}. Now with the influence of temperature.\relax }}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Current dipence on Voltage with a constant irradiance and different temperatures}}{23}{figure.caption.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Power dipence on Voltage with a constant irradiance.}}{24}{figure.caption.24}

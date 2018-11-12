@@ -15,4 +15,3 @@
 \contentsline {section}{\numberline {7}Circuit analysis}{7}{section.7}
 \contentsline {section}{\numberline {8}Modelling in Simulink}{8}{section.8}
 \contentsline {section}{List of Figures}{11}{figure.caption.8}
-\contentsline {section}{Tabellen}{11}{figure.caption.8}

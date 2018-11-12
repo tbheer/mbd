@@ -1,0 +1,125 @@
+% base document setting
+\documentclass[a4,paper,12pt]{article}
+
+% load packages
+\usepackage{./pkg/layout_online}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{filecontents}
+\usepackage{./pkg/pgf-pie}
+
+% user defined macros
+
+% load glossary entries
+%\input{gls/glossar}	% glossary
+%\input{gls/acronyms}	% acronyms
+%\makeglossaries
+
+\newcommand{\changefont}[3]{
+	\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont
+}
+
+\newtoggle{printversion}		% definition for print or onlineversion
+%\toggletrue{printversion}		% uncomment for printversion
+\togglefalse{printversion}		% uncomment for onlineversion
+
+\newtoggle{measurementdetails}		% definition for full measurement details or summary
+%\toggletrue{measurementdetails}	% uncomment for full details
+\togglefalse{measurementdetails}	% uncomment for summary
+
+% document
+\begin{document}
+	\selectlanguage{english}
+	% titlepages
+	\input{./title/title}
+%	
+%	% declaration
+%	%\input{tex/declaration/declaration}
+%	
+%	% abstract
+%	%\input{tex/abstract/abstract}
+%	\newpage
+%	\thispagestyle{empty} ~ % add blank page
+%	%\shorttoc{Kapitelübersicht}{0}
+%	%\newpage
+	\tableofcontents
+	\clearpage
+	
+	%% document contents
+	%\part{Einleitung}
+	\input{./introduction/introduction}
+	
+%	\clearpage
+%	\part{Theoretische Grundlagen}
+%	\label{sec:theory}
+%	\input{../theory/theory}
+%	\bookmarksetup{startatroot}
+%	
+%	\clearpage
+%	\part{Simulationen}
+%	\label{sec:simulation}
+%	\input{../simulation/simulation}
+%	
+%	\clearpage
+%	\part{Versuchsergebnisse}
+%	\label{sec:experiment}
+%	\input{experiment/experiment}
+%	
+%	\clearpage
+%	\part{Schlussfolgerung}
+%	\label{sec:conclusion}
+%	\input{conclusion/conclusion}
+	
+	%\clearpage
+	%\part{Diskussion}
+	%
+	%\clearpage
+	%\part{Ausblick}
+	%	\label{sec:outlook}
+	%	\input{tex/outlook/outlook}
+	%
+	%% bibliography
+	\newpage
+	%\cleardoublepage
+	\addcontentsline{toc}{section}{Literatur}
+	\input{tex/biblio/bib.tex}
+	
+	%
+	%\addcontentsline{toc}{section}{Syhttps://www.tugraz.at/fileadmin/user_upload/Events/Eninnov2014/files/lf/LF_Niederl.pdfmbole}
+	%\input{tex/symbols}
+	%
+	%% glossary
+	%\newpage
+	%\cleardoublepage
+	%
+	%%\clearpage
+	%%\begin{multicols}{2}
+	%%	\scriptsize
+	%%	\glossarystyle{altlistgroup}
+	%%	\glsaddall
+	%	\printglossary[title=Glossar,nonumberlist]
+	%	\printglossaries
+	%%\end{multicols}
+	%
+	% list of figures
+	%\clearpage
+	%\newpage
+	%\cleardoublepage
+	% \phantomsection
+	\addcontentsline{toc}{section}{Abbildungen}
+	\listoffigures
+	%
+	% lsit of tables
+	%\clearpage
+	%\newpage
+	%\cleardoublepage
+	% \phantomsection
+	\addcontentsline{toc}{section}{Tabellen}
+	\listoftables
+	
+%	 appendix
+	\clearpage
+	\input{tex/appendix/appendix}
+	
+	
+\end{document}

@@ -1,0 +1,26 @@
+\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Model Development}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Parameters}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Interface}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Model Design}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Simulation}{6}{subsection.1.4}
+\contentsline {section}{\numberline {2}Model Testing}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Short Circuit}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Open Circuit}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Open Circuit with a higher Voltage}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Open Circuit with a higher Irradiance}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Storing of simulation results}{10}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Characteristic curves of the solar cell}{11}{subsection.2.6}
+\contentsline {section}{\numberline {3}Irradiance effect on solar cell performance}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Temperature}{14}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Variable Irradiance}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Maximum Power Point}{17}{subsection.3.3}
+\contentsline {section}{\numberline {4}Lookup table creation}{21}{section.4}
+\contentsline {section}{\numberline {5}Temperature Effect on PV Performance}{22}{section.5}
+\contentsline {section}{Literatur}{25}{figure.caption.24}
+\contentsline {section}{Abbildungen}{25}{figure.caption.24}
+\contentsline {section}{Tabellen}{25}{figure.caption.24}
+\contentsline {section}{Anhang}{26}{section*.25}
+\contentsline {section}{\numberline {A}Matlab Code}{26}{Appendix.a.A}
