@@ -1,24 +1,34 @@
 \section*{Introduction}
-
+The task was to implement an Finit State Machine in Simulink.
+Afterwards this Finit State Machine is to be tested for its requirements.
+Finally code should be generated and loaded onto the Arduino board. 
 
 \section{Requirements}
 
 	\subsection{Order of Priorities}
 		
 		\begin{enumerate}
-			\item Unlockin
-			\item Wrong Sequence
-			\item Input Handling
-			\item State
-			\item Sampling
-			\item Locking
-			\item Keypad
-			\item Voltage Monitoring
-		\end{enumerate}
+			\item \textbf{Unlocking}\\
+				This is the core of the task and so the most important requirement.
+			\item \textbf{Locking}\\
+				It is necessary to return to the locked state.
+			\item \textbf{Sampling}\\
+				With a sampletime of 10ms you do not have to debounce the inputs. In this case is sampling important.							
+			\item \textbf{Wrong Sequence}\\
+				This requirement makes it difficult to crack the code using the brute force method.
+			\item \textbf{Input Handling}\\
+				This is a nice feature and can be useful if you have mistyped.
+			\item \textbf{State}\\
+				It would be a nice feature to see the current state. But it is not essential.		
+			\item \textbf{Keypad}\\
+				It is absolutely irrelevant whether the numbers are compared as integers between 0-9 or as ACII integers between 48 - 57.
+%			\item Voltage Monitoring
+		\end{enumerate}	
+The Voltage Monitoring is an own requirement. Because it has no connection with the remaining requirements.
 	
 	
 	\subsection{Funcional and non functional requirements}
-	Functional	
+	Functional	\todo{Sort}
 		\begin{itemize}
 			\item Unlockin
 			\item Wrong Sequence
@@ -35,11 +45,18 @@
 		\end{itemize}
 
 	\subsection{Missing requirements}
+	
+		\begin{itemize}
+			\item[Change Sequence] It would be useful if you could change the sequence while the program is running and not just when the program is freshly loaded onto the arduino board.
+			\item[label] description
+		\end{itemize}
 
 
 \section{Stateflow implementation}
+The two seperate requirements where implemented separately.
 
-	\subsection{Finit State Machine}
+	\subsection{Numeric Sequence Lock}
+	
 	
 	\subsection{Voltage Monitoring}
 

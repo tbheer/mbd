@@ -1,0 +1,65 @@
+\section*{Introduction}
+
+
+\part{Laboratory Sesseion 06}
+
+\section{Model}
+
+
+	\begin{eqnarray}
+		\ddot{x} &=& \frac{1}{M} \sum_{cart} F_x = \frac{1}{M} \left( F - N - b\dot{x}\right)  \\
+		\ddot{\Theta} &=& \frac{1}{I} \sum_{pend} \tau = \frac{1}{I} \left( -Nlcos\Theta - Plsin\Theta \right)  \\
+		N &=& m\left( \ddot{x} - l\dot{\Theta}^2 sin\Theta + l\ddot{\Theta}cos\Theta\right)  \\
+		P &=& m\left( l\ddot{\Theta}^2cos\Theta + l\ddot{\Theta}sin \Theta\right) 
+	\end{eqnarray}
+	
+	\todo{Figure of Model}
+
+
+\section{Discretization from non-linear model}
+	
+	\subsection{Places for discretization}
+	
+	\subsection{Zero force response}
+	
+	\subsection{Positionstep}
+
+\section{Linearization}
+
+	\begin{eqnarray}
+		x &=& \frac{4.126e-06 s^2 - 0.0001025}{2.3e06 s^3+ 4.128e07 s^2 - 7.172e-05 s -1.025e-05}\\
+		\theta &=& \frac{1.045e-05 s}{2.3e-06 s^3 + 4.182e-07 s^2 - 7.172e-05 s - 1.025e-05}
+	\end{eqnarray}
+
+
+\section{Discretization linear model}
+
+	\subsection{Forward Euler}
+	
+		\begin{eqnarray}
+			z = e^{sT} \approx 1 + sT &\rightarrow& s \approx \frac{z - 1}{T}\\
+			hallo &=& hallo
+		\end{eqnarray}
+	
+	\subsection{Backward Euler}
+		
+		\begin{eqnarray}
+			z = e^{sT} \approx \frac{1}{1 + sT} &\rightarrow& s \approx \frac{z - 1}{Tz}\\
+			hallo &=& hallo
+		\end{eqnarray}
+	
+	\subsection{Trapezoidal or Tustin}
+	
+		\begin{eqnarray}
+			z = e^{sT} \approx \frac{1 + sT/2}{1 - sT/2} &\rightarrow& s \approx \frac{2\left( z - 1\right) }{T\left( z+1\right) }\\
+			hallo &=& hallo
+		\end{eqnarray}
+
+\section{System analysis}
+
+
+\section{Control function}
+
+\part{Laboratory Sesseion 07}
+
+
