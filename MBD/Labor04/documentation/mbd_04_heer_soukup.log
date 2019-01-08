@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  8 JAN 2019 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  8 JAN 2019 19:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2481,103 +2481,103 @@ been already used, duplicate ignored
                    \relax 
 l.39 	\clearpage
                  [1] (./content/content.tex
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 57.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 58.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<figures/stateflow.png, id=57, 1081.03876pt x 867.99281pt>
+<figures/stateflow.png, id=63, 1081.03876pt x 867.99281pt>
 File: figures/stateflow.png Graphic file (type png)
 <use figures/stateflow.png>
-Package pdftex.def Info: figures/stateflow.png  used on input line 69.
+Package pdftex.def Info: figures/stateflow.png  used on input line 70.
 (pdftex.def)             Requested size: 352.66617pt x 283.15388pt.
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
  []
 
 [4 <./figures/stateflow.png>]
-<figures/check_input.png, id=72, 1023.07219pt x 457.71pt>
+<figures/check_input.png, id=78, 1023.07219pt x 457.71pt>
 File: figures/check_input.png Graphic file (type png)
 <use figures/check_input.png>
-Package pdftex.def Info: figures/check_input.png  used on input line 106.
+Package pdftex.def Info: figures/check_input.png  used on input line 107.
 (pdftex.def)             Requested size: 352.66617pt x 157.77742pt.
  [5]
-<figures/testing_sim.png, id=79, 1067.48813pt x 424.58624pt>
+<figures/testing_sim.png, id=85, 1067.48813pt x 424.58624pt>
 File: figures/testing_sim.png Graphic file (type png)
 <use figures/testing_sim.png>
-Package pdftex.def Info: figures/testing_sim.png  used on input line 116.
+Package pdftex.def Info: figures/testing_sim.png  used on input line 117.
 (pdftex.def)             Requested size: 352.66617pt x 140.26938pt.
-<figures/arduino_wiring.png, id=81, 473.51906pt x 221.32687pt>
+<figures/arduino_wiring.png, id=87, 473.51906pt x 221.32687pt>
 File: figures/arduino_wiring.png Graphic file (type png)
 <use figures/arduino_wiring.png>
-Package pdftex.def Info: figures/arduino_wiring.png  used on input line 126.
+Package pdftex.def Info: figures/arduino_wiring.png  used on input line 127.
 (pdftex.def)             Requested size: 352.66617pt x 164.84311pt.
  [6 <./figures/check_input.png> <./figures/testing_sim.png>]
-<figures/arduino_implementation.png, id=90, 1589.1872pt x 637.63219pt>
+<figures/arduino_implementation.png, id=96, 1589.1872pt x 637.63219pt>
 File: figures/arduino_implementation.png Graphic file (type png)
 <use figures/arduino_implementation.png>
 Package pdftex.def Info: figures/arduino_implementation.png  used on input line
- 133.
+ 134.
 (pdftex.def)             Requested size: 352.66617pt x 141.4957pt.
-<figures/simulink_settings.png, id=91, 1002.74625pt x 685.8122pt>
+<figures/simulink_settings.png, id=97, 1002.74625pt x 685.8122pt>
 File: figures/simulink_settings.png Graphic file (type png)
 <use figures/simulink_settings.png>
-Package pdftex.def Info: figures/simulink_settings.png  used on input line 139.
+Package pdftex.def Info: figures/simulink_settings.png  used on input line 140.
 
 (pdftex.def)             Requested size: 352.66617pt x 241.19943pt.
  [7 <./figures/arduino_wiring.png> <./figures/arduino_implementation.png>]
-<figures/v_monitor.png, id=100, 478.03593pt x 140.02313pt>
+<figures/v_monitor.png, id=106, 478.03593pt x 140.02313pt>
 File: figures/v_monitor.png Graphic file (type png)
 <use figures/v_monitor.png>
-Package pdftex.def Info: figures/v_monitor.png  used on input line 152.
+Package pdftex.def Info: figures/v_monitor.png  used on input line 153.
 (pdftex.def)             Requested size: 352.66617pt x 103.29927pt.
  [8 <./figures/simulink_settings.png>]
-<figures/v_monitor_testcase.png, id=107, 442.65375pt x 148.30406pt>
+<figures/v_monitor_testcase.png, id=113, 442.65375pt x 148.30406pt>
 File: figures/v_monitor_testcase.png Graphic file (type png)
 <use figures/v_monitor_testcase.png>
-Package pdftex.def Info: figures/v_monitor_testcase.png  used on input line 159
+Package pdftex.def Info: figures/v_monitor_testcase.png  used on input line 161
 .
 (pdftex.def)             Requested size: 352.66617pt x 118.16138pt.
 Package epstopdf Info: Source file: <figures/v_monitor_graph.eps>
@@ -2589,19 +2589,19 @@ df>
 (epstopdf)                    size: 49688 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/v_monitor_graph-ep
 s-converted-to.pdf figures/v_monitor_graph.eps>
-(epstopdf)             \includegraphics on input line 166.
+(epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/v_monitor_graph-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<figures/v_monitor_graph-eps-converted-to.pdf, id=108, 523.9575pt x 298.11375pt
+<figures/v_monitor_graph-eps-converted-to.pdf, id=114, 523.9575pt x 298.11375pt
 >
 File: figures/v_monitor_graph-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/v_monitor_graph-eps-converted-to.pdf>
 Package pdftex.def Info: figures/v_monitor_graph-eps-converted-to.pdf  used on 
-input line 166.
+input line 168.
 (pdftex.def)             Requested size: 352.66617pt x 200.65858pt.
 [9 <./figures/v_monitor.png> <./figures/v_monitor_testcase.png>]) [10 <./figure
 s/v_monitor_graph-eps-converted-to.pdf>] (./mbd_04_heer_soukup.lof)
@@ -2619,10 +2619,10 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 61736 strings out of 492982
- 1402697 string characters out of 6134895
- 1854105 words of memory out of 5000000
- 64242 multiletter control sequences out of 15000+600000
+ 61746 strings out of 492982
+ 1402792 string characters out of 6134895
+ 1855236 words of memory out of 5000000
+ 64247 multiletter control sequences out of 15000+600000
  624072 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,98p,10391b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2634,10 +2634,10 @@ fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
 2.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
-Output written on mbd_04_heer_soukup.pdf (12 pages, 607357 bytes).
+Output written on mbd_04_heer_soukup.pdf (12 pages, 607806 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

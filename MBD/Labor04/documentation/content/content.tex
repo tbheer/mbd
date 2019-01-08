@@ -125,7 +125,7 @@ The Voltage Monitoring is an own requirement. Because it has no connection with 
 			\begin{figure}[H]
 					\centering
 					\includegraphics[width=0.7\textwidth]{figures/arduino_wiring.png}
-					\caption{pin assignment (Source: ECE MBD: Laboratory session)}
+					\caption[pin assignment]{pin assignment \\Source: ECE MBD: Laboratory session}
 					\label{fig:ard_wir}
 			\end{figure}
 		The given template for the keypad was included into the Simulink model and the settings were adjusted in order to motivate Simulink to deploy the code onto the Arduino. Visible in Figure \ref{fig:ard_imp} and \ref{fig:settings}.
@@ -154,22 +154,30 @@ The Voltage Monitoring is an own requirement. Because it has no connection with 
 			\caption[Implementation of the voltage monitoring]{Implementation of the voltage monitoring\\ Source: Own presentation}
 			\label{fig:v_mon}
 		\end{figure}
-	In Figure \ref*{fig:v_test} is a test setup for the voltage monitor. As input a sinus generator was used. The amplitude was 1.5V with an offset was 3.5V, so the middle between minimum and maximum. The frequence is $1^{rad}/_{sec}.$ The results of this test is visible in Figure \ref{fig:v_graph}.
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\textwidth]{figures/v_monitor_testcase.png}
-			\caption[Test structure]{Test structure\\ Source: Own presentation}
-			\label{fig:v_test}
-		\end{figure}
+		\subsection{Testing the Voltage Monitor}
+		In Figure \ref*{fig:v_test} is a test setup for the voltage monitor. As input a sinus generator was used. The amplitude was 1.5V with an offset was 3.5V, so the middle between minimum and maximum. The frequence is $1^{rad}/_{sec}.$ The results of this test is visible in Figure \ref{fig:v_graph}.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{figures/v_monitor_testcase.png}
+				\caption[Test structure]{Test structure\\ Source: Own presentation}
+				\label{fig:v_test}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{figures/v_monitor_graph.eps}
+				\caption[Plot of the in- and outputs]{Plot of the in- and outputs. The two upper plots are boolean depence of time. The third is voltagein dependence of time\\ Source: Own presentation}
+				\label{fig:v_graph}
+			\end{figure}
 		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\textwidth]{figures/v_monitor_graph.eps}
-			\caption[Plot of the in- and outputs]{Plot of the in- and outputs. The two upper plots are boolean depence of time. The third is voltagein dependence of time\\ Source: Own presentation}
-			\label{fig:v_graph}
-		\end{figure}
-	
-	
-	
 \section{Conclusion}
-\todo{Ideas}
+Executable program code was generated in a few steps. In this case a statemachine as control was very helpful and easy to implement.
+	\begin{enumerate}
+		\item Requirements were created and sorted
+		\item A model was built and tested and verificated
+		\item Executable programcode was automatically built
+		\item The program code was loaded to a microcontroller and validated
+	\end{enumerate}
+Thanks to the simulation, the program code on the device worked right away. With a few adjustments, the code could be loaded onto other devices.
+Additional an indipendently voltage monitor was created with standart library blocks.
+
