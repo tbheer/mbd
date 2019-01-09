@@ -1,10 +1,10 @@
 \section*{Introduction}
-The task was to implement an Finit State Machine in Simulink.
+The task was to implement a Finit State Machine in Simulink.
 Afterwards this Finit State Machine is to be tested for its requirements.
 Finally code should be generated and loaded onto the Arduino board. 
 
 \section{Requirements}
-In the next Subsections \ref{subsec:prio}, \ref{subsec:func} and \ref{subsec:missing} the requirements are explained in detail.
+In the next Subsections \ref{subsec:prio} \& \ref{subsec:func} the requirements are explained in detail and sorted. In the last Subsection \ref{subsec:missing} is a list with missing requirements.
 
 
 	\subsection{Order of Priorities} \label{subsec:prio}
@@ -23,7 +23,7 @@ In the next Subsections \ref{subsec:prio}, \ref{subsec:func} and \ref{subsec:mis
 			\item \textbf{State}\\
 				It would be a nice feature to see the current state. But it is not essential.		
 			\item \textbf{Keypad}\\
-				It is absolutely irrelevant whether the numbers are compared as integers between 0-9 or as ACII integers between 48 - 57.
+				It is absolutely irrelevant whether the numbers are compared as integers between 0-9 or as ASCII integer numbers between 48 - 57.
 %			\item Voltage Monitoring
 		\end{enumerate}	
 The Voltage Monitoring is an own requirement. Because it has no connection with the remaining requirements.
@@ -33,23 +33,23 @@ The Voltage Monitoring is an own requirement. Because it has no connection with 
 	The requirements from the Word-document where splited in functional and non functional requirements.
 		\subsubsection{Functional}
 			\begin{description}
-				\item [Unlocking] Configurable sequence and the change of the output is functional\\
+				\item [Unlocking] Configurable sequence and the change of the output is functional
 				\item [Wrong Sequence] To blocking the entry for 5s after three wrong sequence entry is functional
-				\item [State] Make the current state visible is a functional demand
+				\item [State] Make the current state visible is a functional demand\\
 				\item [Input Handling] To detect input changes is functional															
-				\item [Voltage Monitoring] Is a standart system function
+				\item [Voltage Monitoring] To show the voltage from the power supply is a functional requirement
 			\end{description}
 		\subsubsection{Non functional}
 			\begin{description}
 				\item [Unlocking] It is non functional to enter the sequence by the button \# \\
 				Should the output be true or false after the correct sequence is non functional
-				\item [State] To make the state by an output visible is non functional
+				\item [State] To make the state by an output visible is non functional, you could use an LED on the board or so
 				\item [Sampling] It is a resource requirement
 				\item [Locking] It is not functional with which button the lock can be closed
 				\item [Keypad] It is an additional requirements, an other possibility whould be a wheel or a fingerprint scanner\\
 				It is also not a system requirement whether the data comes in ascii or binary or whatever
-				\item [Voltage Monitoring] The power source is not a system requirement\\
-				A system requirement whould be a portable power source		
+				\item [Voltage Monitoring] A battery as power source is not a functional system requirement\\
+				A functional system requirement whould be a portable power source		
 			\end{description}
 
 	\subsection{Missing requirements}\label{subsec:missing}
@@ -67,7 +67,7 @@ The Voltage Monitoring is an own requirement. Because it has no connection with 
 	Based on the previously defined requirements the state machine of the numeric sequence lock shall be implemented in Simulink using stateflow. This task begins with defining the needed cases and then working on the transitions between said cases.
 		\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\textwidth]{figures/stateflow.png}
+				\includegraphics[width=1\textwidth]{figures/stateflow.png}
 				\caption{stateflow implementation of the state machine}
 				\label{fig:state}
 		\end{figure} 
@@ -118,7 +118,13 @@ The Voltage Monitoring is an own requirement. Because it has no connection with 
 					\caption{Test structure of the sequence lock}
 					\label{fig:test}
 			\end{figure}
-		All possible cases where tested and the system held up to the expectations. If the correct sequence was entered and the hashtag was pressed the system unlocked itself. The input of the ‘/’ character was ignored. After then pressing the start button the system was locked again. If the wrong sequence was entered the system returned into the IDLE state. If the wrong code was entered too many times the LOCKDOWN state was entered. However, the time the system spent in this state was way too short due to Simulink not simulating in real time.
+		All possible cases, shown in Figure \ref{fig:testcases}, where tested and the system held up to the expectations. If the correct sequence was entered and the hashtag was pressed the system unlocked itself. The input of the ‘/’ character was ignored. After then pressing the start button the system was locked again. If the wrong sequence was entered the system returned into the IDLE state. If the wrong code was entered too many times the LOCKDOWN state was entered. However, the time the system spent in this state was way too short due to Simulink not simulating in real time.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{figures/testcases.jpg}
+				\caption[Test Cases]{Test Cases\\ Source: Numeric Sequence Lock Task Skript}
+				\label{fig:testcases}
+			\end{figure}
 		
 		\subsection{Arduino implementation}
 		After having a working model of the sequence lock the next step was to transfer the software onto the actual hardware, this time being an Arduino UNO with a numerical pad attached. Simulink shall automatically generate the required C code. For this purpose the number pad was attached to the Arduino as in Figure \ref{fig:ard_wir}.
@@ -147,7 +153,7 @@ The Voltage Monitoring is an own requirement. Because it has no connection with 
 	
 	\section{Voltage Monitoring}
 	Due to the simplicity of the voltage monitoring requirements, no stateflow was implemented to do this. For this example were seted 3.3V as minimum  and as maximum 3.7V. In Figure \ref{fig:v_mon} is the implementation evident. The voltage input is compared with the minimum and maximum value. If the input value ist higher or lower then then a rectangular signal is emitted on the respective output. This signal is boolean and triggers all 0.5sec. \\
-	Slight voltage fluctuations were neglected. Therefore no schmitt-trigger was realized. Therefore it could be that the output sometimes flashes only very quickly or a short time. 
+	Slight voltage fluctuations were neglected. Therefore no schmitt-trigger was realized. Maybe it could be that the output sometimes flashes only very quickly or a short time. 
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\textwidth]{figures/v_monitor.png}

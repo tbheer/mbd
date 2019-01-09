@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  8 JAN 2019 19:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  9 JAN 2019 12:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2480,23 +2480,22 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.39 	\clearpage
-                 [1] (./content/content.tex
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+                 [1] (./content/content.tex [2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[2
-
-]
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 58.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 <figures/stateflow.png, id=63, 1081.03876pt x 867.99281pt>
 File: figures/stateflow.png Graphic file (type png)
 <use figures/stateflow.png>
 Package pdftex.def Info: figures/stateflow.png  used on input line 70.
-(pdftex.def)             Requested size: 352.66617pt x 283.15388pt.
+(pdftex.def)             Requested size: 503.81102pt x 404.5131pt.
  [3]
 Underfull \hbox (badness 10000) in paragraph at lines 76--101
 
@@ -2549,35 +2548,41 @@ File: figures/testing_sim.png Graphic file (type png)
 <use figures/testing_sim.png>
 Package pdftex.def Info: figures/testing_sim.png  used on input line 117.
 (pdftex.def)             Requested size: 352.66617pt x 140.26938pt.
-<figures/arduino_wiring.png, id=87, 473.51906pt x 221.32687pt>
+<figures/testcases.jpg, id=87, 465.99094pt x 257.46187pt>
+File: figures/testcases.jpg Graphic file (type jpg)
+<use figures/testcases.jpg>
+Package pdftex.def Info: figures/testcases.jpg  used on input line 124.
+(pdftex.def)             Requested size: 352.66617pt x 194.8559pt.
+ [6 <./figures/check_input.png> <./figures/testing_sim.png>]
+<figures/arduino_wiring.png, id=96, 473.51906pt x 221.32687pt>
 File: figures/arduino_wiring.png Graphic file (type png)
 <use figures/arduino_wiring.png>
-Package pdftex.def Info: figures/arduino_wiring.png  used on input line 127.
+Package pdftex.def Info: figures/arduino_wiring.png  used on input line 133.
 (pdftex.def)             Requested size: 352.66617pt x 164.84311pt.
- [6 <./figures/check_input.png> <./figures/testing_sim.png>]
-<figures/arduino_implementation.png, id=96, 1589.1872pt x 637.63219pt>
+<figures/arduino_implementation.png, id=99, 1589.1872pt x 637.63219pt>
 File: figures/arduino_implementation.png Graphic file (type png)
 <use figures/arduino_implementation.png>
 Package pdftex.def Info: figures/arduino_implementation.png  used on input line
- 134.
+ 140.
 (pdftex.def)             Requested size: 352.66617pt x 141.4957pt.
-<figures/simulink_settings.png, id=97, 1002.74625pt x 685.8122pt>
+<figures/simulink_settings.png, id=100, 1002.74625pt x 685.8122pt>
 File: figures/simulink_settings.png Graphic file (type png)
 <use figures/simulink_settings.png>
-Package pdftex.def Info: figures/simulink_settings.png  used on input line 140.
+Package pdftex.def Info: figures/simulink_settings.png  used on input line 146.
 
 (pdftex.def)             Requested size: 352.66617pt x 241.19943pt.
- [7 <./figures/arduino_wiring.png> <./figures/arduino_implementation.png>]
-<figures/v_monitor.png, id=106, 478.03593pt x 140.02313pt>
+ [7 <./figures/testcases.jpg> <./figures/arduino_wiring.png>]
+<figures/v_monitor.png, id=109, 478.03593pt x 140.02313pt>
 File: figures/v_monitor.png Graphic file (type png)
 <use figures/v_monitor.png>
-Package pdftex.def Info: figures/v_monitor.png  used on input line 153.
+Package pdftex.def Info: figures/v_monitor.png  used on input line 159.
 (pdftex.def)             Requested size: 352.66617pt x 103.29927pt.
- [8 <./figures/simulink_settings.png>]
-<figures/v_monitor_testcase.png, id=113, 442.65375pt x 148.30406pt>
+
+[8 <./figures/arduino_implementation.png> <./figures/simulink_settings.png>]
+<figures/v_monitor_testcase.png, id=116, 442.65375pt x 148.30406pt>
 File: figures/v_monitor_testcase.png Graphic file (type png)
 <use figures/v_monitor_testcase.png>
-Package pdftex.def Info: figures/v_monitor_testcase.png  used on input line 161
+Package pdftex.def Info: figures/v_monitor_testcase.png  used on input line 167
 .
 (pdftex.def)             Requested size: 352.66617pt x 118.16138pt.
 Package epstopdf Info: Source file: <figures/v_monitor_graph.eps>
@@ -2589,19 +2594,19 @@ df>
 (epstopdf)                    size: 49688 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/v_monitor_graph-ep
 s-converted-to.pdf figures/v_monitor_graph.eps>
-(epstopdf)             \includegraphics on input line 168.
+(epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/v_monitor_graph-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<figures/v_monitor_graph-eps-converted-to.pdf, id=114, 523.9575pt x 298.11375pt
+<figures/v_monitor_graph-eps-converted-to.pdf, id=117, 523.9575pt x 298.11375pt
 >
 File: figures/v_monitor_graph-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/v_monitor_graph-eps-converted-to.pdf>
 Package pdftex.def Info: figures/v_monitor_graph-eps-converted-to.pdf  used on 
-input line 168.
+input line 174.
 (pdftex.def)             Requested size: 352.66617pt x 200.65858pt.
 [9 <./figures/v_monitor.png> <./figures/v_monitor_testcase.png>]) [10 <./figure
 s/v_monitor_graph-eps-converted-to.pdf>] (./mbd_04_heer_soukup.lof)
@@ -2619,13 +2624,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 61746 strings out of 492982
- 1402792 string characters out of 6134895
- 1855236 words of memory out of 5000000
- 64247 multiletter control sequences out of 15000+600000
+ 61755 strings out of 492982
+ 1402959 string characters out of 6134895
+ 1854278 words of memory out of 5000000
+ 64253 multiletter control sequences out of 15000+600000
  624072 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,98p,10391b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,11n,98p,10391b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lm
@@ -2634,10 +2639,10 @@ fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
 2.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
-Output written on mbd_04_heer_soukup.pdf (12 pages, 607806 bytes).
+Output written on mbd_04_heer_soukup.pdf (12 pages, 647701 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

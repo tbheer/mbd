@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {2.1}Statemachine detailed}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Input translation}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Testing}{6}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Arduino implementation}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}Arduino implementation}{7}{subsection.2.4}
 \contentsline {section}{\numberline {3}Voltage Monitoring}{8}{section.3}
 \contentsline {subsection}{\numberline {3.1}Testing the Voltage Monitor}{9}{subsection.3.1}
 \contentsline {section}{\numberline {4}Conclusion}{10}{section.4}
