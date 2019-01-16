@@ -1,18 +1,18 @@
 \babel@toc {ngerman}{}
 \babel@toc {ngerman}{}
 \babel@toc {english}{}
-\contentsline {part}{I\hspace {1em}Laboratory Sesseion 06}{2}{part.1}
-\contentsline {section}{\numberline {1}Model}{2}{section.1}
-\contentsline {section}{\numberline {2}Discretization from non-linear model}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Places for discretization}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Zero force response}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Positionstep}{2}{subsection.2.3}
-\contentsline {section}{\numberline {3}Linearization}{2}{section.3}
-\contentsline {section}{\numberline {4}Discretization linear model}{3}{section.4}
-\contentsline {subsection}{\numberline {4.1}Forward Euler}{3}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Backward Euler}{3}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Trapezoidal or Tustin}{3}{subsection.4.3}
-\contentsline {section}{\numberline {5}System analysis}{3}{section.5}
-\contentsline {section}{\numberline {6}Control function}{3}{section.6}
-\contentsline {part}{II\hspace {1em}Laboratory Sesseion 07}{3}{part.2}
-\contentsline {section}{List of Figures}{4}{part.2}
+\contentsline {part}{I\hspace {1em}Laboratory Session 06}{2}{part.1}
+\contentsline {section}{\numberline {1}Description of the Model}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Implementation in simulink}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}Discretization from non-linear model}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Applying zero force to the system}{6}{subsection.2.1}
+\contentsline {section}{\numberline {3}Linearization}{7}{section.3}
+\contentsline {section}{\numberline {4}Discretization linear model}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Forward Euler}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Backward Euler}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Trapezoidal or Tustin}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Discretizing using Matlab}{10}{subsection.4.4}
+\contentsline {section}{\numberline {5}System analysis}{11}{section.5}
+\contentsline {section}{\numberline {6}Control function}{11}{section.6}
+\contentsline {part}{II\hspace {1em}Laboratory Session 07}{11}{part.2}
+\contentsline {section}{List of Figures}{12}{part.2}
