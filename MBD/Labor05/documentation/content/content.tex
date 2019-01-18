@@ -193,9 +193,63 @@ This script puts out the discrete transfer function
 	\frac{2.273\cdot 10^{-8}z^2-1.377\cdot 10^{-13} z-2.273\cdot 10^{-8}}{z^3-3z^2+3z-1}
 \end{equation}
 \section{System analysis}
+As a next step the transfer function of the systems shall be analysed using Matlab. This can be done using the command \textit{pzmap()}. 
+\begin{lstlisting}
+%Plotting poles and zeros 
+figure
+pzmap(P_cart, P_pend)
+legend('cart','pendulum');
 
+figure
+pzmap(d_P_cart, d_P_pend)
+legend('cart','pendulum');
+\end{lstlisting}
+This results in the following two figures.
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/pzmap_cont.eps}
+		\caption{pole and zero map of the continuous systems}
+		\label{fig:pzmap_cont}
+\end{figure}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/pzmap_disc.eps}
+		\caption{pole and zero map of the discrete systems}
+		\label{fig:pzmap_disc}
+\end{figure}
+As figure ~\ref{fig:pzmap_cont} and ~\ref{fig:pzmap_disc} show both the cart and the pendulum are unstable no matter if discretized or not. For the continuous system this can be detected because the poles do not all have a negative imaginary part. Looking at the discrete system at first glance it looks like all poles are within or at last at the unit circle. However after zooming in (see Figure ~\ref{fig:pzmap_disc_zoomed}) it appears that a pole is outside of the unit circle which results in an unstable system.
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/pzmap_disc_zoomed.eps}
+		\caption{zoomed in pole and zero map of the discrete systems}
+		\label{fig:pzmap_disc_zoomed}
+\end{figure}
+Next the both the discrete and the continuous model of the linearized model were implemented in simulink and tested next to each other. In order to get the denominator and the numerator of the transfer function for simulink, Matlabs \textit{tfdata} function was used.
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/both_linearized_subsystems.png}
+		\caption{discrete and continuous version of the linearized system}
+		\label{fig:both_linearized_subsystems}
+\end{figure}
+\todo{Get right results}
 
 \section{Control function}
+Now that we have a working model of the pendulum we are going to have to control the cart in such a way, that it always keeps the pendulum upwards. For this purpose two models are going to be developed: one using the continuous plant and the other using the discrete one. The controller we'll be using is a simply PID controller that simulink offers. In addition a Kalman filter will be implemented in order to provide a more plausible vertical position coming form the plant.
+Firstly, the provided Kalman filter was implemented using the Matlab function block and to test it the following model was built and simulated:
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/kalman_test.png}
+		\caption{Kalman filter test model}
+		\label{fig:kalman_test}
+\end{figure}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/kalman_test_results.eps}
+		\caption{Kalman filter test results}
+		\label{fig:kalman_test_results}
+\end{figure}
+As Figure ~\ref{fig:kalman_test} shows, the filter works quite well, so we can move onto implementing the PID controllers. The complete simulink model with the controllers cna be seen in Figure ~\ref{fig:}
+
 
 \part{Laboratory Session 07}
 

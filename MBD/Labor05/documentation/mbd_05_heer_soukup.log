@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  16 JAN 2019 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  18 JAN 2019 17:40
 entering extended mode
 **./mbd_05_heer_soukup.tex
 (mbd_05_heer_soukup.tex
@@ -2333,11 +2333,123 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 164.
 
 ("C:\Users\Ikarus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [10] [11] (mbd_05_heer_soukup.lof)
+) [10]
+Package epstopdf Info: Source file: <figures/pzmap_cont.eps>
+(epstopdf)                    date: 2019-01-18 14:22:46
+(epstopdf)                    size: 70852 bytes
+(epstopdf)             Output file: <figures/pzmap_cont-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-18 14:28:09
+(epstopdf)                    size: 13351 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/pzmap_cont-eps-conv
+erted-to.pdf figures/pzmap_cont.eps>
+(epstopdf)             \includegraphics on input line 210.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/pzmap_cont-eps-converted-to.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/pzmap_cont-eps-converted-to.pdf, id=173, 421.575pt x 316.18124pt>
+File: figures/pzmap_cont-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/pzmap_cont-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pzmap_cont-eps-converted-to.pdf  used on input
+ line 210.
+(pdftex.def)             Requested size: 352.66617pt x 264.50491pt.
+Package epstopdf Info: Source file: <figures/pzmap_disc.eps>
+(epstopdf)                    date: 2019-01-18 14:23:11
+(epstopdf)                    size: 270768 bytes
+(epstopdf)             Output file: <figures/pzmap_disc-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-18 14:28:10
+(epstopdf)                    size: 33496 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/pzmap_disc-eps-conv
+erted-to.pdf figures/pzmap_disc.eps>
+(epstopdf)             \includegraphics on input line 216.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/pzmap_disc-eps-converted-to.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/pzmap_disc-eps-converted-to.pdf, id=174, 421.575pt x 316.18124pt>
+File: figures/pzmap_disc-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/pzmap_disc-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pzmap_disc-eps-converted-to.pdf  used on input
+ line 216.
+(pdftex.def)             Requested size: 352.66617pt x 264.50491pt.
+[11 <./figures/pzmap_cont-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/pzmap_disc_zoomed.eps>
+(epstopdf)                    date: 2019-01-18 14:33:03
+(epstopdf)                    size: 19621 bytes
+(epstopdf)             Output file: <figures/pzmap_disc_zoomed-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2019-01-18 14:34:17
+(epstopdf)                    size: 8859 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/pzmap_disc_zoomed-e
+ps-converted-to.pdf figures/pzmap_disc_zoomed.eps>
+(epstopdf)             \includegraphics on input line 223.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/pzmap_disc_zoomed-eps-converted-to.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/pzmap_disc_zoomed-eps-converted-to.pdf, id=200, 421.575pt x 316.18124p
+t>
+File: figures/pzmap_disc_zoomed-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/pzmap_disc_zoomed-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pzmap_disc_zoomed-eps-converted-to.pdf  used o
+n input line 223.
+(pdftex.def)             Requested size: 352.66617pt x 264.50491pt.
+[12 <./figures/pzmap_disc-eps-converted-to.pdf>]
+<figures/both_linearized_subsystems.png, id=216, 484.81125pt x 369.88188pt>
+File: figures/both_linearized_subsystems.png Graphic file (type png)
+<use figures/both_linearized_subsystems.png>
+Package pdftex.def Info: figures/both_linearized_subsystems.png  used on input 
+line 230.
+(pdftex.def)             Requested size: 352.66617pt x 269.07463pt.
+ [13 <./figures/pzmap_disc_zoomed-eps-converted-to.pdf>]
+<figures/kalman_test.png, id=229, 474.77374pt x 239.89626pt>
+File: figures/kalman_test.png Graphic file (type png)
+<use figures/kalman_test.png>
+Package pdftex.def Info: figures/kalman_test.png  used on input line 241.
+(pdftex.def)             Requested size: 352.66617pt x 178.20496pt.
+Package epstopdf Info: Source file: <figures/kalman_test_results.eps>
+(epstopdf)                    date: 2019-01-18 17:37:23
+(epstopdf)                    size: 58807 bytes
+(epstopdf)             Output file: <figures/kalman_test_results-eps-converted-
+to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=figures/kalman_test_results
+-eps-converted-to.pdf figures/kalman_test_results.eps>
+(epstopdf)             \includegraphics on input line 247.
+runsystem(epstopdf --outfile=figures/kalman_test_results-eps-converted-to.pdf f
+igures/kalman_test_results.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <figures/kalman_test_results-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2019-01-18 17:40:40
+(epstopdf)                    size: 49234 bytes.
+
+
+pdfTeX warning: pdflatex (file ./figures/kalman_test_results-eps-converted-to.p
+df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/kalman_test_results-eps-converted-to.pdf, id=230, 421.575pt x 298.1137
+5pt>
+File: figures/kalman_test_results-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/kalman_test_results-eps-converted-to.pdf>
+Package pdftex.def Info: figures/kalman_test_results-eps-converted-to.pdf  used
+ on input line 247.
+(pdftex.def)             Requested size: 352.66617pt x 249.39035pt.
+[14 <./figures/both_linearized_subsystems.png>]
+
+LaTeX Warning: Reference `fig:kalman_test' on page 15 undefined on input line 2
+51.
+
+
+LaTeX Warning: Reference `fig:' on page 15 undefined on input line 251.
+
+) [15 <./figures/kalman_test.png> <./figures/kalman_test_results-eps-converted-
+to.pdf>] [16] (mbd_05_heer_soukup.lof)
 \tf@lof=\write8
 \openout8 = `mbd_05_heer_soukup.lof'.
 
- [12
+ [17
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
@@ -2347,15 +2459,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 63383 strings out of 492970
- 1437576 string characters out of 3126150
+ 63444 strings out of 492970
+ 1439288 string characters out of 3126150
  1985714 words of memory out of 3000000
- 66161 multiletter control sequences out of 15000+200000
- 646075 words of font info for 108 fonts, out of 3000000 for 9000
+ 66196 multiletter control sequences out of 15000+200000
+ 650337 words of font info for 109 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,98p,3273b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Ikarus/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
@@ -2383,9 +2498,9 @@ sers/Ikarus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb>
 .pfb><C:/Users/Ikarus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
 msy8.pfb><C:/Users/Ikarus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/cou
 rier/ucrr8a.pfb>
-Output written on mbd_05_heer_soukup.pdf (13 pages, 581298 bytes).
+Output written on mbd_05_heer_soukup.pdf (18 pages, 755129 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
