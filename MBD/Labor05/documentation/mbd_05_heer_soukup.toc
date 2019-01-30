@@ -14,5 +14,5 @@
 \contentsline {subsection}{\numberline {4.4}Discretizing using Matlab}{10}{subsection.4.4}
 \contentsline {section}{\numberline {5}System analysis}{11}{section.5}
 \contentsline {section}{\numberline {6}Control function}{14}{section.6}
-\contentsline {part}{II\hspace {1em}Laboratory Session 07}{15}{part.2}
-\contentsline {section}{List of Figures}{17}{part.2}
+\contentsline {part}{II\hspace {1em}Laboratory Session 07}{17}{part.2}
+\contentsline {section}{List of Figures}{18}{part.2}

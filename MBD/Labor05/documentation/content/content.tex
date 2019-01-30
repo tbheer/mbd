@@ -192,6 +192,7 @@ This script puts out the discrete transfer function
 \begin{equation}
 	\frac{2.273\cdot 10^{-8}z^2-1.377\cdot 10^{-13} z-2.273\cdot 10^{-8}}{z^3-3z^2+3z-1}
 \end{equation}
+\todo{put in both equations}
 \section{System analysis}
 As a next step the transfer function of the systems shall be analysed using Matlab. This can be done using the command \textit{pzmap()}. 
 \begin{lstlisting}
@@ -227,11 +228,17 @@ As figure ~\ref{fig:pzmap_cont} and ~\ref{fig:pzmap_disc} show both the cart and
 Next the both the discrete and the continuous model of the linearized model were implemented in simulink and tested next to each other. In order to get the denominator and the numerator of the transfer function for simulink, Matlabs \textit{tfdata} function was used.
 \begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{figures/both_linearized_subsystems.png}
-		\caption{discrete and continuous version of the linearized system}
-		\label{fig:both_linearized_subsystems}
+		\includegraphics[width=0.7\textwidth]{figures/bothdiscrete_subsystems.png}
+		\caption{linear and non linear version of the discrete system}
+		\label{fig:both_discrete_subsystems}
 \end{figure}
-\todo{Get right results}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/linear_vs_non_linear_discrete.eps}
+		\caption{simulation result of linear and non linear version of the discrete system}
+		\label{fig:both_discrete_subsystems_sim}
+\end{figure}
+As figure~\ref{fig:both_discrete_subsystems_sim} shows, the non linear system behaves the way it should. The pendulum starts swinging and slowly decreases in height. Due to the inertia of the system the cart moves a bit. At first sight the linearized model looks to be wonrg. However, this is not the case as it shows an exponential function which is the solution for the differential equation we're trying to solve. the linearized model only works with small deviations and small time slots, so in order for it to behave correctly we need to implement a controller that gets executed regularly.
 
 \section{Control function}
 Now that we have a working model of the pendulum we are going to have to control the cart in such a way, that it always keeps the pendulum upwards. For this purpose two models are going to be developed: one using the continuous plant and the other using the discrete one. The controller we'll be using is a simply PID controller that simulink offers. In addition a Kalman filter will be implemented in order to provide a more plausible vertical position coming form the plant.
@@ -248,7 +255,41 @@ Firstly, the provided Kalman filter was implemented using the Matlab function bl
 		\caption{Kalman filter test results}
 		\label{fig:kalman_test_results}
 \end{figure}
-As Figure ~\ref{fig:kalman_test} shows, the filter works quite well, so we can move onto implementing the PID controllers. The complete simulink model with the controllers cna be seen in Figure ~\ref{fig:}
+As Figure ~\ref{fig:kalman_test} shows, the filter works quite well, so we can move onto implementing the PID controllers. Now two simulink models were developed. One with the discrete plant and one with the continuous one. The controller was in both cases discrete. For simulation purposes the Kalman filter was implemented using the deviation o fthe angle in order to gain the angular velocity.
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/Kalman_sim.png}
+		\caption{Kalman filter for simulation}
+		\label{fig:kalman_sim}
+\end{figure}
+Now the continuous system was built and simulated using a variable step solver.
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/linear_balan_bot_cont.png}
+		\caption{linearized continuous system simulation setup}
+		\label{fig:lin_cont_sim}
+\end{figure}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/linear_balan_bot_cont_sim.eps}
+		\caption{linearized continuous system simulation results}
+		\label{fig:lin_cont_res}
+\end{figure}
+After that the same was done for the discrete system. This time a fixed step discrete solver was used.
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/linear_balan_bot_disc.png}
+		\caption{linearized discrete system simulation setup}
+		\label{fig:lin_disc_sim}
+\end{figure}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/linear_balan_bot_disc_sim.eps}
+		\caption{linearized discrete system simulation results}
+		\label{fig:lin_disc_res}
+\end{figure}
+
+In both cases the models seem to behave the way they should, the controllers also seem to be working well so we can move on to the next step which is deploying the whole thing onto the actual hardware.
 
 
 \part{Laboratory Session 07}
