@@ -15,4 +15,10 @@
 \contentsline {section}{\numberline {5}System analysis}{11}{section.5}
 \contentsline {section}{\numberline {6}Control function}{15}{section.6}
 \contentsline {part}{II\hspace {1em}Laboratory Session 07}{18}{part.2}
-\contentsline {section}{List of Figures}{19}{part.2}
+\contentsline {section}{\numberline {7}Introduction}{18}{section.7}
+\contentsline {section}{\numberline {8}System Initialization}{18}{section.8}
+\contentsline {section}{\numberline {9}Read Gyro Sensor Data}{21}{section.9}
+\contentsline {section}{\numberline {10}Controller}{21}{section.10}
+\contentsline {section}{\numberline {11}Actuators}{21}{section.11}
+\contentsline {section}{\numberline {12}Whole Structure}{21}{section.12}
+\contentsline {section}{List of Figures}{23}{figure.caption.23}

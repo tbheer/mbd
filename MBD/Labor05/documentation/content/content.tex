@@ -157,14 +157,14 @@ To validate the calculations, the results were compared to the ones yielded in t
 		\end{eqnarray}
 	
 	\subsection{Trapezoidal or Tustin}
-		\begin{small}
+		\begin{tiny}
 		\begin{eqnarray}
 			z = e^{sT} \approx \frac{1 + sT/2}{1 - sT/2} \rightarrow s \approx \frac{2\left( z - 1\right) }{T\left( z+1\right) }\\		
-			G_1\left(z\right)=\frac{\frac{2\left( z - 1\right) }{T\left( z+1\right) }}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(\frac{Ib}{ml}+lb\right)+s(-gM-gm)-gb}
+			G_1\left(z\right)=\frac{\frac{2\left( z - 1\right) }{T\left( z+1\right) }}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{2\left( z - 1\right) }{T\left( z+1\right) }(-gM-gm)-gb}
 			\\
 			G_2\left(z\right)=\frac{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^4\left(MI+Im+Mml^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(Ib+m{bl}^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(-gml\left[M+m\right]\right)-\frac{2\left( z - 1\right) }{T\left( z+1\right) }\left(gbml\right)}
 		\end{eqnarray}
-		\end{small}
+		\end{tiny}
 		
 	\subsection{Discretizing using Matlab}
 	Matlab has a built in function $c2d()$ that can discretize a continuous time transfer function. It only requires the transfer function and the sample time as an input. We using 0.0001 seconds as the sampling time. The Matlab code is shown below:
