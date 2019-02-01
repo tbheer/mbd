@@ -69,22 +69,23 @@ As shown in Figure \ref{fig:sim_with_offset} the pendulum swings left and right 
 In order to further investigate the system for stability to make tuning the controller easier, it is mandatory to linearize the model. This is done by assuming that the slope of a sine wave is linear which of course is not the case but it is a valid approximation. The linearized equations are given by
 
 	\begin{eqnarray}
-		X\left(s\right)s^2=\frac{1}{M}\left(F\left(s\right)-mX\left(s\right)s^2+ml\Phi\left(s\right)s^2-bX\left(s\right)s\right)\\
-		\Phi\left(s\right)s^2=\frac{1}{I}\ \left(mlX\left(s\right)s^2+mlg\Phi\left(s\right)-ml^2\Phi\left(s\right)s^2\right)
+		X\left(s\right)s^2&=&\frac{1}{M}\left(F\left(s\right)-mX\left(s\right)s^2+ml\Phi\left(s\right)s^2-bX\left(s\right)s\right)\\
+		\Phi\left(s\right)s^2&=&\frac{1}{I}\ \left(mlX\left(s\right)s^2+mlg\Phi\left(s\right)-ml^2\Phi\left(s\right)s^2\right)
 	\end{eqnarray}
 
 From these equations the two transfer functions $G_1\left(s\right)=\frac{\Phi\left(s\right)}{F\left(s\right)}$ and $G_2\left(s\right)=\frac{X\left(s\right)}{F\left(s\right)}$ are to be found. This is simply a fact of rearranging the equations. \textbf{$G_1(s)$}
 Solving equation 5 for $X(s)$:
 
 \begin{eqnarray}
-	X(s)\ s^2\ M=F(s)-mX(s)\ s^2+ml\Phi(s)\ s^2-bX(s)s \\
-	X\left(s\right)s^2M=F\left(s\right)+ml\Phi\left(s\right)s^2+X\left(s\right)\left[-ms^2-bs\right] \\
-	X\left(s\right)s^2M-X\left(s\right)\left[-ms^2-bs\right]=F\left(s\right)+ml\Phi\left(s\right)s^2 \\
-	X\left(s\right)\left[s^2M+ms^2+bs\right]=F\left(s\right)+ml\Phi\left(s\right)s^2\\
-	X\left(s\right)=\frac{F\left(s\right)+ml\Phi\left(s\right)s^2}{s^2M+ms^2+bs}
+	X(s)\ s^2\ M&=&F(s)-mX(s)\ s^2+ml\Phi(s)\ s^2-bX(s)s \\
+	X\left(s\right)s^2M&=&F\left(s\right)+ml\Phi\left(s\right)s^2+X\left(s\right)\left[-ms^2-bs\right] \\
+	X\left(s\right)s^2M-X\left(s\right)\left[-ms^2-bs\right]&=&F\left(s\right)+ml\Phi\left(s\right)s^2 \\
+	X\left(s\right)\left[s^2M+ms^2+bs\right]&=&F\left(s\right)+ml\Phi\left(s\right)s^2\\
+	X\left(s\right)&=&\frac{F\left(s\right)+ml\Phi\left(s\right)s^2}{s^2M+ms^2+bs}
 \end{eqnarray}
 
 Inserting into equation 6 we get
+
 
 \begin{eqnarray}
 	\Phi\left(s\right)s^2=\frac{1}{I}\left[mls^2\cdot\frac{F\left(s\right)+ml\Phi\left(s\right)s^2}{s^2M+ms^2+bs}+mlg\Phi\left(s\right)-ml^2\Phi\left(s\right)s^2\right] \\
@@ -141,23 +142,29 @@ To validate the calculations, the results were compared to the ones yielded in t
 	\subsection{Forward Euler}
 	
 		\begin{eqnarray}
-			z = e^{sT} \approx 1 + sT &\rightarrow& s \approx \frac{z - 1}{T}\\
-			hallo &=& hallo
+			z = e^{sT} \approx 1 + sT \rightarrow s \approx \frac{z - 1}{T}\\
+			G_1\left(z\right) \approx \frac{\frac{z - 1}{T}}{\left( \frac{z - 1}{T}\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{z - 1}{T}\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{z - 1}{T}(-gM-gm)-gb}\\
+			G_2\left(z\right)=\frac{\left( \frac{z - 1}{T}\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{z - 1}{T}\right) ^4\left(MI+Im+Mml^2\right)+\left( \frac{z - 1}{T}\right) ^3\left(Ib+m{bl}^2\right)+\left( \frac{z - 1}{T}\right) ^2\left(-gml\left[M+m\right]\right)-\frac{z - 1}{T}\left(gbml\right)}
 		\end{eqnarray}
 	
 	\subsection{Backward Euler}
 		
 		\begin{eqnarray}
-			z = e^{sT} \approx \frac{1}{1 + sT} &\rightarrow& s \approx \frac{z - 1}{Tz}\\
-			hallo &=& hallo
+			z = e^{sT} \approx \frac{1}{1 + sT} \rightarrow s \approx \frac{z - 1}{Tz}\\			
+			G_1\left(z\right)=\frac{\frac{z - 1}{Tz}}{\left( \frac{z - 1}{Tz}\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{z - 1}{Tz}\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{z - 1}{Tz}(-gM-gm)-gb}
+			\\
+			G_2\left(z\right)=\frac{\left( \frac{z - 1}{Tz}\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{z - 1}{Tz}\right) ^4\left(MI+Im+Mml^2\right)+s^3\left(Ib+m{bl}^2\right)+\left( \frac{z - 1}{Tz}\right) ^2\left(-gml\left[M+m\right]\right)-\frac{z - 1}{Tz}\left(gbml\right)}
 		\end{eqnarray}
 	
 	\subsection{Trapezoidal or Tustin}
-	
+		\begin{small}
 		\begin{eqnarray}
-			z = e^{sT} \approx \frac{1 + sT/2}{1 - sT/2} &\rightarrow& s \approx \frac{2\left( z - 1\right) }{T\left( z+1\right) }\\
-			hallo &=& hallo
+			z = e^{sT} \approx \frac{1 + sT/2}{1 - sT/2} \rightarrow s \approx \frac{2\left( z - 1\right) }{T\left( z+1\right) }\\		
+			G_1\left(z\right)=\frac{\frac{2\left( z - 1\right) }{T\left( z+1\right) }}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(\frac{Ib}{ml}+lb\right)+s(-gM-gm)-gb}
+			\\
+			G_2\left(z\right)=\frac{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^4\left(MI+Im+Mml^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(Ib+m{bl}^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(-gml\left[M+m\right]\right)-\frac{2\left( z - 1\right) }{T\left( z+1\right) }\left(gbml\right)}
 		\end{eqnarray}
+		\end{small}
 		
 	\subsection{Discretizing using Matlab}
 	Matlab has a built in function $c2d()$ that can discretize a continuous time transfer function. It only requires the transfer function and the sample time as an input. We using 0.0001 seconds as the sampling time. The Matlab code is shown below:
@@ -292,6 +299,5 @@ After that the same was done for the discrete system. This time a fixed step dis
 In both cases the models seem to behave the way they should, the controllers also seem to be working well so we can move on to the next step which is deploying the whole thing onto the actual hardware.
 
 
-\part{Laboratory Session 07}
 
 

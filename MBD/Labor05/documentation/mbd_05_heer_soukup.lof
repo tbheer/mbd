@@ -7,15 +7,15 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Non linear discrete model in simulink\relax }}{6}{figure.caption.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Non linear discrete model simulation with zero force applied\relax }}{6}{figure.caption.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Non linear discrete model simulation with an offset step in the angle\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces pole and zero map of the continuous systems\relax }}{11}{figure.caption.7}
+\contentsline {figure}{\numberline {7}{\ignorespaces pole and zero map of the continuous systems\relax }}{12}{figure.caption.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces pole and zero map of the discrete systems\relax }}{12}{figure.caption.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces zoomed in pole and zero map of the discrete systems\relax }}{13}{figure.caption.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces linear and non linear version of the discrete system\relax }}{13}{figure.caption.10}
+\contentsline {figure}{\numberline {10}{\ignorespaces linear and non linear version of the discrete system\relax }}{14}{figure.caption.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces simulation result of linear and non linear version of the discrete system\relax }}{14}{figure.caption.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces Kalman filter test model\relax }}{15}{figure.caption.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Kalman filter test results\relax }}{15}{figure.caption.13}
+\contentsline {figure}{\numberline {13}{\ignorespaces Kalman filter test results\relax }}{16}{figure.caption.13}
 \contentsline {figure}{\numberline {14}{\ignorespaces Kalman filter for simulation\relax }}{16}{figure.caption.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces linearized continuous system simulation setup\relax }}{16}{figure.caption.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces linearized continuous system simulation results\relax }}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {15}{\ignorespaces linearized continuous system simulation setup\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces linearized continuous system simulation results\relax }}{17}{figure.caption.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces linearized discrete system simulation setup\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces linearized discrete system simulation results\relax }}{17}{figure.caption.18}
+\contentsline {figure}{\numberline {18}{\ignorespaces linearized discrete system simulation results\relax }}{18}{figure.caption.18}
