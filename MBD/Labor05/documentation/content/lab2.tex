@@ -1,6 +1,8 @@
+\clearpage
 \part{Laboratory Session 07}
 \section{Introduction}
-In this session everything was prepared to put the BalanBot into operation. Unfortunately all BalanBots were already borrowed when everything was ready.
+In this session everything was prepared to put the BalanBot into operation. For this purpose, a block was created for initialization. Another block reads the sensors. These evaluated sensor data are filtered and converted into wheel rotation with a PID controller.
+%Unfortunately all BalanBots were already borrowed when everything was ready.
 
 \section{System Initialization}
 First the MPU6050 has to be initialized. This was done using $I^2C$ communication.
@@ -9,19 +11,17 @@ For example, register 0x19 was assigned the value 7. So the sample rate was set 
 	\begin{equation}
 		1000Hz - \frac{8000Hz}{n-1}
 	\end{equation}
-In this formula n was replaced by the 7.	
-
+In this formula n was replaced by seven.	\\
 \todo{Priority???}\\
-\todo{Listings löschen???}
+\todo{Listings lÃ¶schen???}
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.25\textwidth]{figures/init.PNG}
+		\includegraphics[width=0.275\textwidth]{figures/init.PNG}
 		\caption{The initialization}	
 		Source: Own presentation	
 		\label{fig:init}	
 	\end{figure}
-
 	\begin{mdframed}
 		\begin{lstlisting}[caption={C-Code from the script}, language=c,label={lst:init}]
 	i2cData[0] = 7; // Set the sample rate to 1000Hz - 8kHz/(7+1) = 1000Hz
@@ -31,9 +31,8 @@ In this formula n was replaced by the 7.
 	while (i2cWrite(0x19, i2cData, 4, false)); // Write to all four registers at once
 	while (i2cWrite(0x6B, 0x01, true)); // PLL with X axis gyroscope reference and disable sleep mode		
 		\end{lstlisting}
-	\end{mdframed}
-	
-	\todo{Löschen?????}
+	\end{mdframed}	
+	\todo{LÃ¶schen?????}
 	\begin{mdframed}
 		\begin{lstlisting}[caption={Automatic generated C-Code from the model}, language=c,label={lst:init_real}]
 	/* Start for Enabled SubSystem: '<Root>/One_time_initialization' */
@@ -96,8 +95,7 @@ In this formula n was replaced by the 7.
 	\end{mdframed}
 
 	
-
-\section{Read Gyro Sensor Data}\label{sec:read}
+\section{Read Sensor Datas}\label{sec:read}
 	\begin{figure}[!htbp]
 		\centering
 		\includegraphics[width=0.7\textwidth]{figures/read.PNG}
@@ -109,7 +107,6 @@ The sensor data is processed in this block. First they are converted into the da
 Then the bus signal is splited into angle and gyro.
 	\subsection{Angle}
 	The Pythagorean theorem is used to calculate the absolute value of accX and accZ. With this value and accY the arctan finally calculates the angle in radians. At the end the angle is converted into degrees. Sown in Listing \ref{lst:roll}.
-	\todo{Wieso wird seitliche Beschl accY berücksichtigt????}
 		\begin{mdframed}
 			\begin{lstlisting}[caption={Conversion from the acceleration to the angle}, language=matlab,label={lst:roll}]
 			function roll = fcn(i2c_sens_data)

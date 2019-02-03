@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  3 FEB 2019 01:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.13)  3 FEB 2019 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2607,7 +2607,7 @@ l.31 ...numberline {14}Conclusion}{26}{section.14}
 (./content/content.tex [3
 
 ]
-<figures/cart.png, id=86, 481.8pt x 357.335pt>
+<figures/cart.png, id=84, 481.8pt x 357.335pt>
 File: figures/cart.png Graphic file (type png)
 <use figures/cart.png>
 Package pdftex.def Info: figures/cart.png  used on input line 11.
@@ -2906,12 +2906,14 @@ Package pdftex.def Info: figures/linear_balan_bot_disc_sim-eps-converted-to.pdf
 eps-converted-to.pdf> <./figures/linear_balan_bot_disc.png>])
 (./content/lab2.tex [19 <./figures/linear_balan_bot_disc_sim-eps-converted-to.p
 df>]
-<figures/init.PNG, id=355, 272.51813pt x 503.63156pt>
+<figures/init.PNG, id=354, 272.51813pt x 503.63156pt>
 File: figures/init.PNG Graphic file (type png)
 <use figures/init.PNG>
-Package pdftex.def Info: figures/init.PNG  used on input line 19.
-(pdftex.def)             Requested size: 125.95274pt x 232.76456pt.
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+Package pdftex.def Info: figures/init.PNG  used on input line 20.
+(pdftex.def)             Requested size: 138.54495pt x 256.0418pt.
+ [20
+
+] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -2925,46 +2927,44 @@ File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-)
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 96.
- [20 <./figures/init.PNG>] [21]
-<figures/read.PNG, id=428, 555.57562pt x 286.06876pt>
+) [21 <./figures/init.PNG>]
+<figures/read.PNG, id=381, 555.57562pt x 286.06876pt>
 File: figures/read.PNG Graphic file (type png)
 <use figures/read.PNG>
-Package pdftex.def Info: figures/read.PNG  used on input line 103.
+Package pdftex.def Info: figures/read.PNG  used on input line 101.
 (pdftex.def)             Requested size: 352.66617pt x 181.59053pt.
- (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-) [22 <./figures/read.PNG>] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.
-def
+ [22] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 )
-<figures/controller.PNG, id=446, 562.35094pt x 234.1247pt>
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+)
+Package mdframed Info: Not enough space on this page on input line 133.
+ [23 <./figures/read.PNG>]
+Package mdframed Info: Not enough space on this page on input line 133.
+<figures/controller.PNG, id=451, 562.35094pt x 234.1247pt>
 File: figures/controller.PNG Graphic file (type png)
 <use figures/controller.PNG>
-Package pdftex.def Info: figures/controller.PNG  used on input line 157.
+Package pdftex.def Info: figures/controller.PNG  used on input line 154.
 (pdftex.def)             Requested size: 352.66617pt x 146.82771pt.
- [23]
-<figures/act.PNG, id=460, 656.4525pt x 466.74374pt>
+ [24]
+<figures/act.PNG, id=465, 656.4525pt x 466.74374pt>
 File: figures/act.PNG Graphic file (type png)
 <use figures/act.PNG>
-Package pdftex.def Info: figures/act.PNG  used on input line 171.
+Package pdftex.def Info: figures/act.PNG  used on input line 168.
 (pdftex.def)             Requested size: 352.66617pt x 250.7488pt.
-
-[24 <./figures/controller.PNG>]
-<figures/struct.PNG, id=469, 579.66562pt x 275.52937pt>
+ [25 <./figures/controller.PNG>]
+<figures/struct.PNG, id=473, 579.66562pt x 275.52937pt>
 File: figures/struct.PNG Graphic file (type png)
 <use figures/struct.PNG>
-Package pdftex.def Info: figures/struct.PNG  used on input line 183.
+Package pdftex.def Info: figures/struct.PNG  used on input line 180.
 (pdftex.def)             Requested size: 352.66617pt x 167.63121pt.
- [25 <./figures/act.PNG> <./figures/struct.PNG>]) [26] (./mbd_05_heer_soukup.lo
+ [26 <./figures/act.PNG> <./figures/struct.PNG>]) [27] (./mbd_05_heer_soukup.lo
 f)
 \tf@lof=\write8
 \openout8 = `mbd_05_heer_soukup.lof'.
 
- [27
+ [28
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
@@ -2978,9 +2978,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 63828 strings out of 492982
- 1435111 string characters out of 6134895
- 2356514 words of memory out of 5000000
+ 63829 strings out of 492982
+ 1435118 string characters out of 6134895
+ 2224219 words of memory out of 5000000
  66108 multiletter control sequences out of 15000+600000
  648271 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3004,10 +3004,10 @@ type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8
 a.pfb>
-Output written on mbd_05_heer_soukup.pdf (28 pages, 1023438 bytes).
+Output written on mbd_05_heer_soukup.pdf (29 pages, 1022773 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 574 compressed objects within 6 object streams
- 203 named destinations out of 1000 (max. 500000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 577 compressed objects within 6 object streams
+ 204 named destinations out of 1000 (max. 500000)
  360 words of extra memory for PDF output out of 10000 (max. 10000000)
 
