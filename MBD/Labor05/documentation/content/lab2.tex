@@ -3,7 +3,16 @@
 In this session everything was prepared to put the BalanBot into operation. Unfortunately all BalanBots were already borrowed when everything was ready.
 
 \section{System Initialization}
-First the MPU6050 has to be initialized.
+First the MPU6050 has to be initialized. This was done using $I^2C$ communication.
+A value was assigned to the individual registers at the slave address 0x68.
+For example, register 0x19 was assigned the value 7. So the sample rate was set with the formula:\\
+	\begin{equation}
+		1000Hz - \frac{8000Hz}{n-1}
+	\end{equation}
+In this formula n was replaced by the 7.	
+
+\todo{Priority???}\\
+\todo{Listings löschen???}
 
 	\begin{figure}[H]
 		\centering
@@ -24,7 +33,7 @@ First the MPU6050 has to be initialized.
 		\end{lstlisting}
 	\end{mdframed}
 	
-
+	\todo{Löschen?????}
 	\begin{mdframed}
 		\begin{lstlisting}[caption={Automatic generated C-Code from the model}, language=c,label={lst:init_real}]
 	/* Start for Enabled SubSystem: '<Root>/One_time_initialization' */
@@ -88,57 +97,79 @@ First the MPU6050 has to be initialized.
 
 	
 
-\section{Read Gyro Sensor Data}
-The sensor data is processed in this block. First they are converted into the data type int16. Then they are divided into angle and gyro.
-
+\section{Read Gyro Sensor Data}\label{sec:read}
 	\begin{figure}[!htbp]
 		\centering
-		\includegraphics[width=0.3\textwidth]{figures/read.PNG}
+		\includegraphics[width=0.7\textwidth]{figures/read.PNG}
 		\caption{Processing of the read datas}	
 		Source: Own presentation	
 		\label{fig:read}	
 	\end{figure}
-
-	\begin{mdframed}
-		\begin{lstlisting}[caption={Conversion from the acceleration to the angle}, language=matlab,label={lst:roll}]
-	function roll = fcn(i2c_sens_data)
-	accX = double(i2c_sens_data(1));
-	accY = double(i2c_sens_data(2));
-	accZ = double(i2c_sens_data(3));
-	roll = atan(accY / sqrt(accX * accX + accZ * accZ)) * 180/pi;		
-		\end{lstlisting}
-	\end{mdframed}
-
-	\begin{mdframed}
-		\begin{lstlisting}[caption={Conversion to the gyros}, language=matlab,label={lst:gyro}]
-	function [gyroXrate,gyroYrate,gyroZrate] = fcn(i2c_sens_data)
-	gyroX = double(i2c_sens_data(5));
-	gyroY = double(i2c_sens_data(6));
-	gyroZ = double(i2c_sens_data(7));
-	gyroXrate = gyroX/131;
-	gyroYrate = gyroY/131;
-	gyroZrate = gyroZ/131;	
-		\end{lstlisting}
-	\end{mdframed}
-
+The sensor data is processed in this block. First they are converted into the data type int16. 
+Then the bus signal is splited into angle and gyro.
+	\subsection{Angle}
+	The Pythagorean theorem is used to calculate the absolute value of accX and accZ. With this value and accY the arctan finally calculates the angle in radians. At the end the angle is converted into degrees. Sown in Listing \ref{lst:roll}.
+	\todo{Wieso wird seitliche Beschl accY berücksichtigt????}
+		\begin{mdframed}
+			\begin{lstlisting}[caption={Conversion from the acceleration to the angle}, language=matlab,label={lst:roll}]
+			function roll = fcn(i2c_sens_data)
+			accX = double(i2c_sens_data(1));
+			accY = double(i2c_sens_data(2));
+			accZ = double(i2c_sens_data(3));
+			roll = atan(accY / sqrt(accX * accX + accZ * accZ)) * 180/pi;		
+			\end{lstlisting}
+		\end{mdframed}
+	
+	\subsection{Gyro}
+	The data from the gyro sensor is converted to double format and then divided by 131. Shown in Listing \ref{lst:gyro}.
+	\todo{why /131???}
+		\begin{mdframed}
+			\begin{lstlisting}[caption={Conversion to the gyros}, language=matlab,label={lst:gyro}]
+			function [gyroXrate,gyroYrate,gyroZrate] = fcn(i2c_sens_data)
+			gyroX = double(i2c_sens_data(5));
+			gyroY = double(i2c_sens_data(6));
+			gyroZ = double(i2c_sens_data(7));
+			gyroXrate = gyroX/131;
+			gyroYrate = gyroY/131;
+			gyroZrate = gyroZ/131;	
+			\end{lstlisting}
+		\end{mdframed}
+	
+	\subsection{Test in External Mode}
+	\todo{Was stellten wir fest}
+	
 
 \section{Controller}
+The controller now uses the sensor data prepared in Section \ref{sec:read}. First, measurement errors are reduced with the kalman filter.
+Then the filtered angle is converted into a PWM signal by a PID controller.
+For the factors of the PID controller the values recommended in the script were taken first. These were finally adjusted by tests on the BalanBot. For this purpose, the simulation in Simulink was run in the external mode.\\
+\todo{replace figure with update values and descripe the new Values}
 
-	\begin{figure}[!htbp]
+	\subsection{Kp}
+	xx
+	\subsection{Ki}
+	xx
+	\subsection{Kd}
+	xx
+	
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{figures/controller.PNG}
-		\caption{....}	
+		\caption{Kalman Filter and PID Controller}	
 		Source: Own presentation	
 		\label{fig:controller}	
 	\end{figure}
 
 
 \section{Actuators}
+The direction of rotation of the motors is done with an H-bridge of the digital outputs at pins 3, 4, 7 and 8. If the PWM input is greater than zero, the motors rotate in one direction. If it is smaller, they rotate in the other direction.
+This PWM input value is finally converted into a PWM signal.\\
+If the input is zero, the signal is constant zero. The larger this input is, the wider the PWM signal becomes. If this value is greater than or equal to 255, the signal is constant 1. This conversion is done with the blocks assigned to ports 5 and 6.
 
-	\begin{figure}[!htbp]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{figures/act.PNG}
-		\caption{....}	
+		\caption{Converts the PWM input in direction of rotation and speedo}	
 		Source: Own presentation	
 		\label{fig:act}	
 	\end{figure}
@@ -154,6 +185,12 @@ Finally, all the blocks from the previous sections were assembled to form a sing
 		Source: Own presentation	
 		\label{fig:struct}	
 	\end{figure}
+
+\section{Test with the BalanBot}
+When simulating in external mode the PID controller could be adjusted. The cable did not turn out to be advantageous.
+The adjustment of the PID values required a lot of patience and know-how.
+
+\section{Conclusion}
 
 
 

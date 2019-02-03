@@ -1,24 +1,32 @@
 \babel@toc {ngerman}{}
 \babel@toc {ngerman}{}
 \babel@toc {english}{}
-\contentsline {part}{I\hspace {1em}Laboratory Session 06}{2}{part.1}
-\contentsline {section}{\numberline {1}Description of the Model}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Implementation in simulink}{4}{subsection.1.1}
-\contentsline {section}{\numberline {2}Discretization from non-linear model}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Applying zero force to the system}{6}{subsection.2.1}
-\contentsline {section}{\numberline {3}Linearization}{7}{section.3}
-\contentsline {section}{\numberline {4}Discretization linear model}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Forward Euler}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Backward Euler}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Trapezoidal or Tustin}{10}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Discretizing using Matlab}{10}{subsection.4.4}
-\contentsline {section}{\numberline {5}System analysis}{11}{section.5}
-\contentsline {section}{\numberline {6}Control function}{15}{section.6}
-\contentsline {part}{II\hspace {1em}Laboratory Session 07}{18}{part.2}
-\contentsline {section}{\numberline {7}Introduction}{18}{section.7}
-\contentsline {section}{\numberline {8}System Initialization}{18}{section.8}
-\contentsline {section}{\numberline {9}Read Gyro Sensor Data}{21}{section.9}
-\contentsline {section}{\numberline {10}Controller}{21}{section.10}
-\contentsline {section}{\numberline {11}Actuators}{21}{section.11}
-\contentsline {section}{\numberline {12}Whole Structure}{21}{section.12}
-\contentsline {section}{List of Figures}{23}{figure.caption.23}
+\contentsline {part}{I\hspace {1em}Laboratory Session 06}{3}{part.1}
+\contentsline {section}{\numberline {1}Description of the Model}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Implementation in simulink}{5}{subsection.1.1}
+\contentsline {section}{\numberline {2}Discretization from non-linear model}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Applying zero force to the system}{7}{subsection.2.1}
+\contentsline {section}{\numberline {3}Linearization}{8}{section.3}
+\contentsline {section}{\numberline {4}Discretization linear model}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Forward Euler}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Backward Euler}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Trapezoidal or Tustin}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Discretizing using Matlab}{11}{subsection.4.4}
+\contentsline {section}{\numberline {5}System analysis}{12}{section.5}
+\contentsline {section}{\numberline {6}Control function}{16}{section.6}
+\contentsline {part}{II\hspace {1em}Laboratory Session 07}{19}{part.2}
+\contentsline {section}{\numberline {7}Introduction}{19}{section.7}
+\contentsline {section}{\numberline {8}System Initialization}{19}{section.8}
+\contentsline {section}{\numberline {9}Read Gyro Sensor Data}{22}{section.9}
+\contentsline {subsection}{\numberline {9.1}Angle}{22}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Gyro}{23}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Test in External Mode}{23}{subsection.9.3}
+\contentsline {section}{\numberline {10}Controller}{23}{section.10}
+\contentsline {subsection}{\numberline {10.1}Kp}{23}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Ki}{23}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Kd}{23}{subsection.10.3}
+\contentsline {section}{\numberline {11}Actuators}{24}{section.11}
+\contentsline {section}{\numberline {12}Whole Structure}{25}{section.12}
+\contentsline {section}{\numberline {13}Test with the BalanBot}{26}{section.13}
+\contentsline {section}{\numberline {14}Conclusion}{26}{section.14}
+\contentsline {section}{List of Figures}{27}{section.14}
