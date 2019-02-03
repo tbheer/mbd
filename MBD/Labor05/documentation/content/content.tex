@@ -144,25 +144,25 @@ To validate the calculations, the results were compared to the ones yielded in t
 		\begin{eqnarray}
 			z = e^{sT} \approx 1 + sT \rightarrow s \approx \frac{z - 1}{T}\\
 			G_1\left(z\right) \approx \frac{\frac{z - 1}{T}}{\left( \frac{z - 1}{T}\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{z - 1}{T}\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{z - 1}{T}(-gM-gm)-gb}\\
-			G_2\left(z\right)=\frac{\left( \frac{z - 1}{T}\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{z - 1}{T}\right) ^4\left(MI+Im+Mml^2\right)+\left( \frac{z - 1}{T}\right) ^3\left(Ib+m{bl}^2\right)+\left( \frac{z - 1}{T}\right) ^2\left(-gml\left[M+m\right]\right)-\frac{z - 1}{T}\left(gbml\right)}
+			G_2\left(z\right)\approx \frac{\left( \frac{z - 1}{T}\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{z - 1}{T}\right) ^4\left(MI+Im+Mml^2\right)+\left( \frac{z - 1}{T}\right) ^3\left(Ib+m{bl}^2\right)+\left( \frac{z - 1}{T}\right) ^2\left(-gml\left[M+m\right]\right)-\frac{z - 1}{T}\left(gbml\right)}
 		\end{eqnarray}
 	
 	\subsection{Backward Euler}
 		
 		\begin{eqnarray}
 			z = e^{sT} \approx \frac{1}{1 + sT} \rightarrow s \approx \frac{z - 1}{Tz}\\			
-			G_1\left(z\right)=\frac{\frac{z - 1}{Tz}}{\left( \frac{z - 1}{Tz}\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{z - 1}{Tz}\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{z - 1}{Tz}(-gM-gm)-gb}
+			G_1\left(z\right)\approx\frac{\frac{z - 1}{Tz}}{\left( \frac{z - 1}{Tz}\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{z - 1}{Tz}\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{z - 1}{Tz}(-gM-gm)-gb}
 			\\
-			G_2\left(z\right)=\frac{\left( \frac{z - 1}{Tz}\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{z - 1}{Tz}\right) ^4\left(MI+Im+Mml^2\right)+s^3\left(Ib+m{bl}^2\right)+\left( \frac{z - 1}{Tz}\right) ^2\left(-gml\left[M+m\right]\right)-\frac{z - 1}{Tz}\left(gbml\right)}
+			G_2\left(z\right)\approx\frac{\left( \frac{z - 1}{Tz}\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{z - 1}{Tz}\right) ^4\left(MI+Im+Mml^2\right)+s^3\left(Ib+m{bl}^2\right)+\left( \frac{z - 1}{Tz}\right) ^2\left(-gml\left[M+m\right]\right)-\frac{z - 1}{Tz}\left(gbml\right)}
 		\end{eqnarray}
 	
 	\subsection{Trapezoidal or Tustin}
 		\begin{tiny}
 		\begin{eqnarray}
 			z = e^{sT} \approx \frac{1 + sT/2}{1 - sT/2} \rightarrow s \approx \frac{2\left( z - 1\right) }{T\left( z+1\right) }\\		
-			G_1\left(z\right)=\frac{\frac{2\left( z - 1\right) }{T\left( z+1\right) }}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{2\left( z - 1\right) }{T\left( z+1\right) }(-gM-gm)-gb}
+			G_1\left(z\right)\approx\frac{\frac{2\left( z - 1\right) }{T\left( z+1\right) }}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(\frac{MI}{ml}+\frac{I}{l}+Ml\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(\frac{Ib}{ml}+lb\right)+\frac{2\left( z - 1\right) }{T\left( z+1\right) }(-gM-gm)-gb}
 			\\
-			G_2\left(z\right)=\frac{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^4\left(MI+Im+Mml^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(Ib+m{bl}^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(-gml\left[M+m\right]\right)-\frac{2\left( z - 1\right) }{T\left( z+1\right) }\left(gbml\right)}
+			G_2\left(z\right)\approx\frac{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(I+ml^2\right)-mlg}{\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^4\left(MI+Im+Mml^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^3\left(Ib+m{bl}^2\right)+\left( \frac{2\left( z - 1\right) }{T\left( z+1\right) }\right) ^2\left(-gml\left[M+m\right]\right)-\frac{2\left( z - 1\right) }{T\left( z+1\right) }\left(gbml\right)}
 		\end{eqnarray}
 		\end{tiny}
 		
